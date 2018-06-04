@@ -1,0 +1,2126 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1818067120C5892400D11EB2 /* SetNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818066F20C5892400D11EB2 /* SetNetworkViewController.swift */; };
+		1818067220C5892400D11EB2 /* SetNetworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1818067020C5892400D11EB2 /* SetNetworkViewController.xib */; };
+		1818067520C58A8100D11EB2 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818067320C58A8100D11EB2 /* SpeakerViewController.swift */; };
+		1818067620C58A8100D11EB2 /* SpeakerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1818067420C58A8100D11EB2 /* SpeakerViewController.xib */; };
+		1818067920C58A9700D11EB2 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818067720C58A9600D11EB2 /* MyViewController.swift */; };
+		1818067A20C58A9700D11EB2 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1818067820C58A9600D11EB2 /* MyViewController.xib */; };
+		185A779020C288A600B39E77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A778F20C288A600B39E77 /* AppDelegate.swift */; };
+		185A779220C288A600B39E77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A779120C288A600B39E77 /* ViewController.swift */; };
+		185A779520C288A600B39E77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185A779320C288A600B39E77 /* Main.storyboard */; };
+		185A779720C288A600B39E77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185A779620C288A600B39E77 /* Assets.xcassets */; };
+		185A779A20C288A600B39E77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185A779820C288A600B39E77 /* LaunchScreen.storyboard */; };
+		185A793520C289EE00B39E77 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77AB20C289ED00B39E77 /* NSObject+YYModel.m */; };
+		185A793620C289EE00B39E77 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77AC20C289ED00B39E77 /* YYClassInfo.m */; };
+		185A793720C289EE00B39E77 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77AF20C289ED00B39E77 /* SRWebSocket.m */; };
+		185A793820C289EE00B39E77 /* CKMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77B320C289ED00B39E77 /* CKMemoryCache.m */; };
+		185A793920C289EE00B39E77 /* CKFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77B520C289ED00B39E77 /* CKFileCache.m */; };
+		185A793A20C289EE00B39E77 /* CKCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77B920C289ED00B39E77 /* CKCache.m */; };
+		185A793B20C289EE00B39E77 /* CKNullCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77BA20C289ED00B39E77 /* CKNullCache.m */; };
+		185A793C20C289EE00B39E77 /* CKCacheContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77BC20C289ED00B39E77 /* CKCacheContent.m */; };
+		185A793D20C289EE00B39E77 /* QNUploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77C320C289ED00B39E77 /* QNUploadManager.m */; };
+		185A793E20C289EE00B39E77 /* QNConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77C420C289ED00B39E77 /* QNConfiguration.m */; };
+		185A793F20C289EE00B39E77 /* QNResumeUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77C620C289ED00B39E77 /* QNResumeUpload.m */; };
+		185A794020C289EE00B39E77 /* QNUpToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77C820C289ED00B39E77 /* QNUpToken.m */; };
+		185A794120C289EE00B39E77 /* QNFormUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77CB20C289ED00B39E77 /* QNFormUpload.m */; };
+		185A794220C289EE00B39E77 /* QNUploadOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77CC20C289ED00B39E77 /* QNUploadOption.m */; };
+		185A794320C289EE00B39E77 /* QNPHAssetResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77CE20C289ED00B39E77 /* QNPHAssetResource.m */; };
+		185A794420C289EE00B39E77 /* QNCrc32.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77CF20C289ED00B39E77 /* QNCrc32.m */; };
+		185A794520C289EE00B39E77 /* QNUrlSafeBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77D220C289ED00B39E77 /* QNUrlSafeBase64.m */; };
+		185A794620C289EE00B39E77 /* QNFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77D620C289ED00B39E77 /* QNFile.m */; };
+		185A794720C289EE00B39E77 /* QNEtag.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77D720C289ED00B39E77 /* QNEtag.m */; };
+		185A794820C289EE00B39E77 /* QNSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77D920C289ED00B39E77 /* QNSystem.m */; };
+		185A794920C289EE00B39E77 /* QNAsyncRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77DC20C289ED00B39E77 /* QNAsyncRun.m */; };
+		185A794A20C289EE00B39E77 /* QNALAssetFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77DE20C289ED00B39E77 /* QNALAssetFile.m */; };
+		185A794B20C289EE00B39E77 /* QNPHAssetFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77DF20C289ED00B39E77 /* QNPHAssetFile.m */; };
+		185A794C20C289EE00B39E77 /* QN_GTM_Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77E020C289ED00B39E77 /* QN_GTM_Base64.m */; };
+		185A794D20C289EE00B39E77 /* QNUserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77E620C289ED00B39E77 /* QNUserAgent.m */; };
+		185A794E20C289EE00B39E77 /* QNResponseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77E820C289ED00B39E77 /* QNResponseInfo.m */; };
+		185A794F20C289EE00B39E77 /* QNSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77EA20C289ED00B39E77 /* QNSessionManager.m */; };
+		185A795020C289EE00B39E77 /* QNDes.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77EE20C289ED00B39E77 /* QNDes.m */; };
+		185A795120C289EE00B39E77 /* QNHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77EF20C289ED00B39E77 /* QNHex.m */; };
+		185A795220C289EE00B39E77 /* QNIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77F020C289ED00B39E77 /* QNIP.m */; };
+		185A795320C289EE00B39E77 /* QNTxtResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77F620C289ED00B39E77 /* QNTxtResolver.m */; };
+		185A795420C289EE00B39E77 /* QNHijackingDetectWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77FA20C289ED00B39E77 /* QNHijackingDetectWrapper.m */; };
+		185A795520C289EE00B39E77 /* QNResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77FC20C289ED00B39E77 /* QNResolver.m */; };
+		185A795620C289EE00B39E77 /* QNResolvUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77FD20C289ED00B39E77 /* QNResolvUtil.m */; };
+		185A795720C289EE00B39E77 /* QNHosts.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A77FE20C289ED00B39E77 /* QNHosts.m */; };
+		185A795820C289EE00B39E77 /* QNDnsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A780120C289ED00B39E77 /* QNDnsManager.m */; };
+		185A795920C289EE00B39E77 /* QNNetworkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A780520C289ED00B39E77 /* QNNetworkInfo.m */; };
+		185A795A20C289EE00B39E77 /* QNDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A780620C289ED00B39E77 /* QNDomain.m */; };
+		185A795B20C289EE00B39E77 /* QNRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A780820C289ED00B39E77 /* QNRecord.m */; };
+		185A795C20C289EE00B39E77 /* QNDnspodFree.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A780B20C289ED00B39E77 /* QNDnspodFree.m */; };
+		185A795D20C289EE00B39E77 /* QNDnspodEnterprise.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A780E20C289ED00B39E77 /* QNDnspodEnterprise.m */; };
+		185A795E20C289EE00B39E77 /* QNFileRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A781020C289ED00B39E77 /* QNFileRecorder.m */; };
+		185A795F20C289EE00B39E77 /* libUMessage_Sdk_1.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A781520C289ED00B39E77 /* libUMessage_Sdk_1.4.0.a */; };
+		185A796020C289EE00B39E77 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A781920C289ED00B39E77 /* UIProgressView+AFNetworking.m */; };
+		185A796120C289EE00B39E77 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A781B20C289ED00B39E77 /* UIRefreshControl+AFNetworking.m */; };
+		185A796220C289EE00B39E77 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A781E20C289ED00B39E77 /* AFNetworkActivityIndicatorManager.m */; };
+		185A796320C289EE00B39E77 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A782420C289ED00B39E77 /* UIImageView+AFNetworking.m */; };
+		185A796420C289EE00B39E77 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A782720C289ED00B39E77 /* UIButton+AFNetworking.m */; };
+		185A796520C289EE00B39E77 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A782820C289ED00B39E77 /* UIActivityIndicatorView+AFNetworking.m */; };
+		185A796620C289EE00B39E77 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A782920C289ED00B39E77 /* UIWebView+AFNetworking.m */; };
+		185A796720C289EE00B39E77 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A782A20C289ED00B39E77 /* AFAutoPurgingImageCache.m */; };
+		185A796820C289EE00B39E77 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A782C20C289ED00B39E77 /* AFImageDownloader.m */; };
+		185A796920C289EE00B39E77 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A783220C289ED00B39E77 /* AFURLResponseSerialization.m */; };
+		185A796A20C289EE00B39E77 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A783320C289ED00B39E77 /* AFHTTPSessionManager.m */; };
+		185A796B20C289EE00B39E77 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A783520C289ED00B39E77 /* AFURLSessionManager.m */; };
+		185A796C20C289EE00B39E77 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A783620C289ED00B39E77 /* AFURLRequestSerialization.m */; };
+		185A796D20C289EE00B39E77 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A783820C289ED00B39E77 /* AFNetworkReachabilityManager.m */; };
+		185A796E20C289EE00B39E77 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A783920C289ED00B39E77 /* AFSecurityPolicy.m */; };
+		185A796F20C289EE00B39E77 /* WifiLinkEasyConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A783D20C289ED00B39E77 /* WifiLinkEasyConfig.m */; };
+		185A797020C289EE00B39E77 /* EasyConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A784020C289ED00B39E77 /* EasyConfig.a */; };
+		185A797120C289EE00B39E77 /* libiot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A784220C289ED00B39E77 /* libiot.a */; };
+		185A797220C289EE00B39E77 /* WifiLinkSmartConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A784320C289ED00B39E77 /* WifiLinkSmartConnection.m */; };
+		185A797320C289EE00B39E77 /* WifiLinkOneShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A784720C289ED00B39E77 /* WifiLinkOneShot.m */; };
+		185A797420C289EE00B39E77 /* libConfiguration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A784820C289ED00B39E77 /* libConfiguration.a */; };
+		185A797520C289EE00B39E77 /* MarvellSmartConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A784D20C289ED00B39E77 /* MarvellSmartConfig.m */; };
+		185A797620C289EE00B39E77 /* WifiLinkMarvell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A785020C289ED00B39E77 /* WifiLinkMarvell.m */; };
+		185A797720C289EE00B39E77 /* WifiLinkCC3x.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A785320C289ED00B39E77 /* WifiLinkCC3x.m */; };
+		185A797820C289EE00B39E77 /* libFTC_DEBUG_ARM_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A785420C289ED00B39E77 /* libFTC_DEBUG_ARM_64.a */; };
+		185A797920C289EE00B39E77 /* WifiLinkHF.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A785820C289ED00B39E77 /* WifiLinkHF.m */; };
+		185A797A20C289EE00B39E77 /* libsmartlinklib_7x.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A785920C289ED00B39E77 /* libsmartlinklib_7x.a */; };
+		185A797B20C289EE00B39E77 /* EasyLinkForAXZWifiLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A786020C289ED00B39E77 /* EasyLinkForAXZWifiLink.m */; };
+		185A797C20C289EE00B39E77 /* MXCHIPAirlink.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A786120C289ED00B39E77 /* MXCHIPAirlink.m */; };
+		185A797D20C289EE00B39E77 /* libEasyLink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A786420C289ED00B39E77 /* libEasyLink.a */; };
+		185A797E20C289EE00B39E77 /* WifiLinkEasyLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A786520C289ED00B39E77 /* WifiLinkEasyLink.m */; };
+		185A797F20C289EE00B39E77 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A786820C289ED00B39E77 /* libcrypto.a */; };
+		185A798020C289EE00B39E77 /* WifiLinkCooee.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A786A20C289ED00B39E77 /* WifiLinkCooee.m */; };
+		185A798120C289EE00B39E77 /* libcooee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A786B20C289ED00B39E77 /* libcooee.a */; };
+		185A798220C289EE00B39E77 /* WifiLinkSimpleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A786E20C289ED00B39E77 /* WifiLinkSimpleConfig.m */; };
+		185A798320C289EE00B39E77 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A787020C289ED00B39E77 /* AsyncUdpSocket.m */; };
+		185A798420C289EE00B39E77 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A787320C289ED00B39E77 /* AsyncSocket.m */; };
+		185A798520C289EE00B39E77 /* libLibSimpleConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A787420C289ED00B39E77 /* libLibSimpleConfig.a */; };
+		185A798620C289EE00B39E77 /* WifiLinkGuBei.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A787920C289EE00B39E77 /* WifiLinkGuBei.m */; };
+		185A798720C289EE00B39E77 /* libBLEasyConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A787B20C289EE00B39E77 /* libBLEasyConfig.a */; };
+		185A798820C289EE00B39E77 /* libXlwDevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A787D20C289EE00B39E77 /* libXlwDevice.a */; };
+		185A798920C289EE00B39E77 /* WifiLinkXlw.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A788020C289EE00B39E77 /* WifiLinkXlw.m */; };
+		185A798A20C289EE00B39E77 /* LTLinklib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A788420C289EE00B39E77 /* LTLinklib.a */; };
+		185A798B20C289EE00B39E77 /* WifiLinkLTLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A788520C289EE00B39E77 /* WifiLinkLTLink.m */; };
+		185A798C20C289EE00B39E77 /* WifiLinkCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A788720C289EE00B39E77 /* WifiLinkCustom.m */; };
+		185A798D20C289EE00B39E77 /* ESP_NetUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A788C20C289EE00B39E77 /* ESP_NetUtil.m */; };
+		185A798E20C289EE00B39E77 /* ESP_ByteUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A788D20C289EE00B39E77 /* ESP_ByteUtil.m */; };
+		185A798F20C289EE00B39E77 /* ESP_WifiUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A788E20C289EE00B39E77 /* ESP_WifiUtil.m */; };
+		185A799020C289EE00B39E77 /* ESP_CRC8.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A788F20C289EE00B39E77 /* ESP_CRC8.m */; };
+		185A799120C289EE00B39E77 /* ESPUDPSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A789720C289EE00B39E77 /* ESPUDPSocketServer.m */; };
+		185A799220C289EE00B39E77 /* ESPUDPSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A789820C289EE00B39E77 /* ESPUDPSocketClient.m */; };
+		185A799320C289EE00B39E77 /* ESPGuideCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A789B20C289EE00B39E77 /* ESPGuideCode.m */; };
+		185A799420C289EE00B39E77 /* ESPTouchGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A789C20C289EE00B39E77 /* ESPTouchGenerator.m */; };
+		185A799520C289EE00B39E77 /* ESPDataCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A78A020C289EE00B39E77 /* ESPDataCode.m */; };
+		185A799620C289EE00B39E77 /* ESPDatumCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A78A220C289EE00B39E77 /* ESPDatumCode.m */; };
+		185A799720C289EE00B39E77 /* WifiLinkEspTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A78A320C289EE00B39E77 /* WifiLinkEspTouch.m */; };
+		185A799820C289EE00B39E77 /* ESPTouchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A78A520C289EE00B39E77 /* ESPTouchResult.m */; };
+		185A799920C289EE00B39E77 /* ESPTouchTaskParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A78A720C289EE00B39E77 /* ESPTouchTaskParameter.m */; };
+		185A799A20C289EE00B39E77 /* ESPTouchTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A78A820C289EE00B39E77 /* ESPTouchTask.m */; };
+		185A799B20C289EE00B39E77 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A78AE20C289EE00B39E77 /* GCDAsyncUdpSocket.m */; };
+		185A799C20C289EE00B39E77 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A78AF20C289EE00B39E77 /* GCDAsyncSocket.m */; };
+		185A799D20C289EE00B39E77 /* aes_cbc.c in Sources */ = {isa = PBXBuildFile; fileRef = 185A78B320C289EE00B39E77 /* aes_cbc.c */; };
+		185A799E20C289EE00B39E77 /* aes_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 185A78B520C289EE00B39E77 /* aes_core.c */; };
+		185A799F20C289EE00B39E77 /* libAbleCloudLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A78B820C289EE00B39E77 /* libAbleCloudLib.a */; };
+		185A79A020C289EE00B39E77 /* libAbleCloudLib_Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A793420C289EE00B39E77 /* libAbleCloudLib_Simulator.a */; };
+		185A79A220C28A0A00B39E77 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A79A120C28A0A00B39E77 /* libicucore.tbd */; };
+		185A79A420C28A1400B39E77 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A79A320C28A1400B39E77 /* libresolv.tbd */; };
+		185A79A620C28A2100B39E77 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A79A520C28A2100B39E77 /* libz.tbd */; };
+		185A79B120C28B9200B39E77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A79AF20C28B9200B39E77 /* LoginViewController.swift */; };
+		185A79B220C28B9200B39E77 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185A79B020C28B9200B39E77 /* LoginViewController.xib */; };
+		185A79B520C2939600B39E77 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A79B320C2939600B39E77 /* RootViewController.swift */; };
+		185A79B620C2939600B39E77 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185A79B420C2939600B39E77 /* RootViewController.xib */; };
+		185A79B920C2A72B00B39E77 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A79B720C2A72B00B39E77 /* RegisterViewController.swift */; };
+		185A79BA20C2A72B00B39E77 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185A79B820C2A72B00B39E77 /* RegisterViewController.xib */; };
+		1862F5D420C2B2D900BD8CDA /* MBProgressHUDExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862F5D320C2B2D900BD8CDA /* MBProgressHUDExtension.swift */; };
+		1862F5D620C2B31A00BD8CDA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862F5D520C2B31A00BD8CDA /* StringExtension.swift */; };
+		6094070565CC38A9FA29CC3C /* Pods_IntelSpeaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032535DFDF94729B7728AFDC /* Pods_IntelSpeaker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		032535DFDF94729B7728AFDC /* Pods_IntelSpeaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelSpeaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1818066F20C5892400D11EB2 /* SetNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNetworkViewController.swift; sourceTree = "<group>"; };
+		1818067020C5892400D11EB2 /* SetNetworkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetNetworkViewController.xib; sourceTree = "<group>"; };
+		1818067320C58A8100D11EB2 /* SpeakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerViewController.swift; sourceTree = "<group>"; };
+		1818067420C58A8100D11EB2 /* SpeakerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeakerViewController.xib; sourceTree = "<group>"; };
+		1818067720C58A9600D11EB2 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		1818067820C58A9600D11EB2 /* MyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		185A778C20C288A600B39E77 /* IntelSpeaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelSpeaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		185A778F20C288A600B39E77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		185A779120C288A600B39E77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		185A779420C288A600B39E77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		185A779620C288A600B39E77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		185A779920C288A600B39E77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		185A779B20C288A600B39E77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185A77A120C288BD00B39E77 /* IntelSpeaker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IntelSpeaker-Bridging-Header.h"; sourceTree = "<group>"; };
+		185A77AA20C289ED00B39E77 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		185A77AB20C289ED00B39E77 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		185A77AC20C289ED00B39E77 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		185A77AD20C289ED00B39E77 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		185A77AF20C289ED00B39E77 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		185A77B020C289ED00B39E77 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		185A77B120C289ED00B39E77 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		185A77B320C289ED00B39E77 /* CKMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKMemoryCache.m; sourceTree = "<group>"; };
+		185A77B420C289ED00B39E77 /* CKCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCache.h; sourceTree = "<group>"; };
+		185A77B520C289ED00B39E77 /* CKFileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKFileCache.m; sourceTree = "<group>"; };
+		185A77B620C289ED00B39E77 /* CKCacheContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCacheContent.h; sourceTree = "<group>"; };
+		185A77B720C289ED00B39E77 /* CKNullCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKNullCache.h; sourceTree = "<group>"; };
+		185A77B820C289ED00B39E77 /* CKMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMemoryCache.h; sourceTree = "<group>"; };
+		185A77B920C289ED00B39E77 /* CKCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCache.m; sourceTree = "<group>"; };
+		185A77BA20C289ED00B39E77 /* CKNullCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKNullCache.m; sourceTree = "<group>"; };
+		185A77BB20C289ED00B39E77 /* CacheKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheKit.h; sourceTree = "<group>"; };
+		185A77BC20C289ED00B39E77 /* CKCacheContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCacheContent.m; sourceTree = "<group>"; };
+		185A77BD20C289ED00B39E77 /* CKFileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKFileCache.h; sourceTree = "<group>"; };
+		185A77C020C289ED00B39E77 /* QNResumeUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNResumeUpload.h; sourceTree = "<group>"; };
+		185A77C120C289ED00B39E77 /* QNUploadOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUploadOption.h; sourceTree = "<group>"; };
+		185A77C220C289ED00B39E77 /* QNFormUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNFormUpload.h; sourceTree = "<group>"; };
+		185A77C320C289ED00B39E77 /* QNUploadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUploadManager.m; sourceTree = "<group>"; };
+		185A77C420C289ED00B39E77 /* QNConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNConfiguration.m; sourceTree = "<group>"; };
+		185A77C520C289ED00B39E77 /* QNUpToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUpToken.h; sourceTree = "<group>"; };
+		185A77C620C289ED00B39E77 /* QNResumeUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNResumeUpload.m; sourceTree = "<group>"; };
+		185A77C720C289ED00B39E77 /* QNUploadOption+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QNUploadOption+Private.h"; sourceTree = "<group>"; };
+		185A77C820C289ED00B39E77 /* QNUpToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUpToken.m; sourceTree = "<group>"; };
+		185A77C920C289ED00B39E77 /* QNConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNConfiguration.h; sourceTree = "<group>"; };
+		185A77CA20C289ED00B39E77 /* QNUploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUploadManager.h; sourceTree = "<group>"; };
+		185A77CB20C289ED00B39E77 /* QNFormUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNFormUpload.m; sourceTree = "<group>"; };
+		185A77CC20C289ED00B39E77 /* QNUploadOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUploadOption.m; sourceTree = "<group>"; };
+		185A77CE20C289ED00B39E77 /* QNPHAssetResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNPHAssetResource.m; sourceTree = "<group>"; };
+		185A77CF20C289ED00B39E77 /* QNCrc32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNCrc32.m; sourceTree = "<group>"; };
+		185A77D020C289ED00B39E77 /* QNFileDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNFileDelegate.h; sourceTree = "<group>"; };
+		185A77D120C289ED00B39E77 /* QNALAssetFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNALAssetFile.h; sourceTree = "<group>"; };
+		185A77D220C289ED00B39E77 /* QNUrlSafeBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUrlSafeBase64.m; sourceTree = "<group>"; };
+		185A77D320C289ED00B39E77 /* QNAsyncRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNAsyncRun.h; sourceTree = "<group>"; };
+		185A77D420C289ED00B39E77 /* QN_GTM_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QN_GTM_Base64.h; sourceTree = "<group>"; };
+		185A77D520C289ED00B39E77 /* QNPHAssetFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPHAssetFile.h; sourceTree = "<group>"; };
+		185A77D620C289ED00B39E77 /* QNFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNFile.m; sourceTree = "<group>"; };
+		185A77D720C289ED00B39E77 /* QNEtag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNEtag.m; sourceTree = "<group>"; };
+		185A77D820C289ED00B39E77 /* QNVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNVersion.h; sourceTree = "<group>"; };
+		185A77D920C289ED00B39E77 /* QNSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNSystem.m; sourceTree = "<group>"; };
+		185A77DA20C289ED00B39E77 /* QNCrc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNCrc32.h; sourceTree = "<group>"; };
+		185A77DB20C289ED00B39E77 /* QNPHAssetResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPHAssetResource.h; sourceTree = "<group>"; };
+		185A77DC20C289ED00B39E77 /* QNAsyncRun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNAsyncRun.m; sourceTree = "<group>"; };
+		185A77DD20C289ED00B39E77 /* QNUrlSafeBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUrlSafeBase64.h; sourceTree = "<group>"; };
+		185A77DE20C289ED00B39E77 /* QNALAssetFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNALAssetFile.m; sourceTree = "<group>"; };
+		185A77DF20C289ED00B39E77 /* QNPHAssetFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNPHAssetFile.m; sourceTree = "<group>"; };
+		185A77E020C289ED00B39E77 /* QN_GTM_Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QN_GTM_Base64.m; sourceTree = "<group>"; };
+		185A77E120C289ED00B39E77 /* QNSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNSystem.h; sourceTree = "<group>"; };
+		185A77E220C289ED00B39E77 /* QNEtag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNEtag.h; sourceTree = "<group>"; };
+		185A77E320C289ED00B39E77 /* QNFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNFile.h; sourceTree = "<group>"; };
+		185A77E520C289ED00B39E77 /* QNResponseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNResponseInfo.h; sourceTree = "<group>"; };
+		185A77E620C289ED00B39E77 /* QNUserAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUserAgent.m; sourceTree = "<group>"; };
+		185A77E720C289ED00B39E77 /* QNSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNSessionManager.h; sourceTree = "<group>"; };
+		185A77E820C289ED00B39E77 /* QNResponseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNResponseInfo.m; sourceTree = "<group>"; };
+		185A77E920C289ED00B39E77 /* QNHttpDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNHttpDelegate.h; sourceTree = "<group>"; };
+		185A77EA20C289ED00B39E77 /* QNSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNSessionManager.m; sourceTree = "<group>"; };
+		185A77EB20C289ED00B39E77 /* QNUserAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUserAgent.h; sourceTree = "<group>"; };
+		185A77EE20C289ED00B39E77 /* QNDes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNDes.m; sourceTree = "<group>"; };
+		185A77EF20C289ED00B39E77 /* QNHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNHex.m; sourceTree = "<group>"; };
+		185A77F020C289ED00B39E77 /* QNIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNIP.m; sourceTree = "<group>"; };
+		185A77F120C289ED00B39E77 /* QNDes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNDes.h; sourceTree = "<group>"; };
+		185A77F220C289ED00B39E77 /* QNHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNHex.h; sourceTree = "<group>"; };
+		185A77F320C289ED00B39E77 /* QNIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNIP.h; sourceTree = "<group>"; };
+		185A77F520C289ED00B39E77 /* QNHijackingDetectWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNHijackingDetectWrapper.h; sourceTree = "<group>"; };
+		185A77F620C289ED00B39E77 /* QNTxtResolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNTxtResolver.m; sourceTree = "<group>"; };
+		185A77F720C289ED00B39E77 /* QNResolvUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNResolvUtil.h; sourceTree = "<group>"; };
+		185A77F820C289ED00B39E77 /* QNResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNResolver.h; sourceTree = "<group>"; };
+		185A77F920C289ED00B39E77 /* QNHosts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNHosts.h; sourceTree = "<group>"; };
+		185A77FA20C289ED00B39E77 /* QNHijackingDetectWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNHijackingDetectWrapper.m; sourceTree = "<group>"; };
+		185A77FB20C289ED00B39E77 /* QNTxtResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNTxtResolver.h; sourceTree = "<group>"; };
+		185A77FC20C289ED00B39E77 /* QNResolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNResolver.m; sourceTree = "<group>"; };
+		185A77FD20C289ED00B39E77 /* QNResolvUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNResolvUtil.m; sourceTree = "<group>"; };
+		185A77FE20C289ED00B39E77 /* QNHosts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNHosts.m; sourceTree = "<group>"; };
+		185A780020C289ED00B39E77 /* QNNetworkInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNNetworkInfo.h; sourceTree = "<group>"; };
+		185A780120C289ED00B39E77 /* QNDnsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNDnsManager.m; sourceTree = "<group>"; };
+		185A780220C289ED00B39E77 /* QNDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNDomain.h; sourceTree = "<group>"; };
+		185A780320C289ED00B39E77 /* QNRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNRecord.h; sourceTree = "<group>"; };
+		185A780420C289ED00B39E77 /* QNResolverDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNResolverDelegate.h; sourceTree = "<group>"; };
+		185A780520C289ED00B39E77 /* QNNetworkInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNNetworkInfo.m; sourceTree = "<group>"; };
+		185A780620C289ED00B39E77 /* QNDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNDomain.m; sourceTree = "<group>"; };
+		185A780720C289ED00B39E77 /* QNDnsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNDnsManager.h; sourceTree = "<group>"; };
+		185A780820C289ED00B39E77 /* QNRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNRecord.m; sourceTree = "<group>"; };
+		185A780920C289ED00B39E77 /* HappyDNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HappyDNS.h; sourceTree = "<group>"; };
+		185A780B20C289ED00B39E77 /* QNDnspodFree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNDnspodFree.m; sourceTree = "<group>"; };
+		185A780C20C289ED00B39E77 /* QNDnspodEnterprise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNDnspodEnterprise.h; sourceTree = "<group>"; };
+		185A780D20C289ED00B39E77 /* QNDnspodFree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNDnspodFree.h; sourceTree = "<group>"; };
+		185A780E20C289ED00B39E77 /* QNDnspodEnterprise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNDnspodEnterprise.m; sourceTree = "<group>"; };
+		185A781020C289ED00B39E77 /* QNFileRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNFileRecorder.m; sourceTree = "<group>"; };
+		185A781120C289ED00B39E77 /* QNFileRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNFileRecorder.h; sourceTree = "<group>"; };
+		185A781220C289ED00B39E77 /* QNRecorderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNRecorderDelegate.h; sourceTree = "<group>"; };
+		185A781320C289ED00B39E77 /* QiniuSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuSDK.h; sourceTree = "<group>"; };
+		185A781520C289ED00B39E77 /* libUMessage_Sdk_1.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.4.0.a; sourceTree = "<group>"; };
+		185A781620C289ED00B39E77 /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
+		185A781920C289ED00B39E77 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		185A781A20C289ED00B39E77 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		185A781B20C289ED00B39E77 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		185A781C20C289ED00B39E77 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		185A781D20C289ED00B39E77 /* AFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageDownloader.h; sourceTree = "<group>"; };
+		185A781E20C289ED00B39E77 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		185A781F20C289ED00B39E77 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
+		185A782020C289ED00B39E77 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		185A782120C289ED00B39E77 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		185A782220C289ED00B39E77 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		185A782320C289ED00B39E77 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		185A782420C289ED00B39E77 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		185A782520C289ED00B39E77 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		185A782620C289ED00B39E77 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		185A782720C289ED00B39E77 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		185A782820C289ED00B39E77 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		185A782920C289ED00B39E77 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		185A782A20C289ED00B39E77 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
+		185A782B20C289ED00B39E77 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		185A782C20C289ED00B39E77 /* AFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageDownloader.m; sourceTree = "<group>"; };
+		185A782E20C289ED00B39E77 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		185A782F20C289ED00B39E77 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		185A783020C289ED00B39E77 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		185A783120C289ED00B39E77 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		185A783220C289ED00B39E77 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		185A783320C289ED00B39E77 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		185A783420C289ED00B39E77 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		185A783520C289ED00B39E77 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		185A783620C289ED00B39E77 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		185A783720C289ED00B39E77 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		185A783820C289ED00B39E77 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		185A783920C289ED00B39E77 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		185A783A20C289ED00B39E77 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		185A783D20C289ED00B39E77 /* WifiLinkEasyConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiLinkEasyConfig.m; sourceTree = "<group>"; };
+		185A783E20C289ED00B39E77 /* WifiLinkEasyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiLinkEasyConfig.h; sourceTree = "<group>"; };
+		185A783F20C289ED00B39E77 /* EasyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyConfig.h; sourceTree = "<group>"; };
+		185A784020C289ED00B39E77 /* EasyConfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = EasyConfig.a; sourceTree = "<group>"; };
+		185A784220C289ED00B39E77 /* libiot.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiot.a; sourceTree = "<group>"; };
+		185A784320C289ED00B39E77 /* WifiLinkSmartConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiLinkSmartConnection.m; sourceTree = "<group>"; };
+		185A784420C289ED00B39E77 /* WifiLinkSmartConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiLinkSmartConnection.h; sourceTree = "<group>"; };
+		185A784520C289ED00B39E77 /* SmartConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartConnection.h; sourceTree = "<group>"; };
+		185A784720C289ED00B39E77 /* WifiLinkOneShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiLinkOneShot.m; sourceTree = "<group>"; };
+		185A784820C289ED00B39E77 /* libConfiguration.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libConfiguration.a; sourceTree = "<group>"; };
+		185A784920C289ED00B39E77 /* OneShotConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneShotConfig.h; sourceTree = "<group>"; };
+		185A784A20C289ED00B39E77 /* WifiLinkOneShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiLinkOneShot.h; sourceTree = "<group>"; };
+		185A784B20C289ED00B39E77 /* ManualConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualConfig.h; sourceTree = "<group>"; };
+		185A784D20C289ED00B39E77 /* MarvellSmartConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarvellSmartConfig.m; sourceTree = "<group>"; };
+		185A784E20C289ED00B39E77 /* WifiLinkMarvell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiLinkMarvell.h; sourceTree = "<group>"; };
+		185A784F20C289ED00B39E77 /* MarvellSmartConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarvellSmartConfig.h; sourceTree = "<group>"; };
+		185A785020C289ED00B39E77 /* WifiLinkMarvell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiLinkMarvell.m; sourceTree = "<group>"; };
+		185A785220C289ED00B39E77 /* FirstTimeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTimeConfig.h; sourceTree = "<group>"; };
+		185A785320C289ED00B39E77 /* WifiLinkCC3x.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiLinkCC3x.m; sourceTree = "<group>"; };
+		185A785420C289ED00B39E77 /* libFTC_DEBUG_ARM_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFTC_DEBUG_ARM_64.a; sourceTree = "<group>"; };
+		185A785520C289ED00B39E77 /* WifiLinkCC3x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiLinkCC3x.h; sourceTree = "<group>"; };
+		185A785720C289ED00B39E77 /* HFSmartLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFSmartLink.h; sourceTree = "<group>"; };
+		185A785820C289ED00B39E77 /* WifiLinkHF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiLinkHF.m; sourceTree = "<group>"; };
+		185A785920C289ED00B39E77 /* libsmartlinklib_7x.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsmartlinklib_7x.a; sourceTree = "<group>"; };
+		185A785A20C289ED00B39E77 /* smartlinklib_7x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smartlinklib_7x.h; sourceTree = "<group>"; };
+		185A785B20C289ED00B39E77 /* WifiLinkHF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiLinkHF.h; sourceTree = "<group>"; };
+		185A785C20C289ED00B39E77 /* HFSmartLinkDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFSmartLinkDeviceInfo.h; sourceTree = "<group>"; };
+		185A785E20C289ED00B39E77 /* EASYLINK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EASYLINK.h; sourceTree = "<group>"; };
+		185A785F20C289ED00B39E77 /* AXZWifiLinkProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXZWifiLinkProtocol.h; sourceTree = "<group>"; };
+		185A786020C289ED00B39E77 /* EasyLinkForAXZWifiLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyLinkForAXZWifiLink.m; sourceTree = "<group>"; };
+		185A786120C289ED00B39E77 /* MXCHIPAirlink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXCHIPAirlink.m; sourceTree = "<group>"; };
+		185A786220C289ED00B39E77 /* WifiLinkEasyLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiLinkEasyLink.h; sourceTree = "<group>"; };
+		185A786320C289ED00B39E77 /* EasyLinkForAXZWifiLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyLinkForAXZWifiLink.h; sourceTree = "<group>"; };
+		185A786420C289ED00B39E77 /* libEasyLink.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEasyLink.a; sourceTree = "<group>"; };
+		185A786520C289ED00B39E77 /* WifiLinkEasyLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiLinkEasyLink.m; sourceTree = "<group>"; };
+		185A786620C289ED00B39E77 /* MXCHIPAirlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXCHIPAirlink.h; sourceTree = "<group>"; };
+		185A786820C289ED00B39E77 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		185A786920C289ED00B39E77 /* WifiLinkCooee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiLinkCooee.h; sourceTree = "<group>"; };
+		185A786A20C289ED00B39E77 /* WifiLinkCooee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiLinkCooee.m; sourceTree = "<group>"; };
+		185A786B20C289ED00B39E77 /* libcooee.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcooee.a; sourceTree = "<group>"; };
+		185A786C20C289ED00B39E77 /* Cooee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cooee.h; sourceTree = "<group>"; };
+		185A786E20C289ED00B39E77 /* WifiLinkSimpleConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiLinkSimpleConfig.m; sourceTree = "<group>"; };
+		185A786F20C289ED00B39E77 /* SimpleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleConfig.h; sourceTree = "<group>"; };
+		185A787020C289ED00B39E77 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		185A787120C289ED00B39E77 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		185A787220C289ED00B39E77 /* WifiLinkSimpleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiLinkSimpleConfig.h; sourceTree = "<group>"; };
+		185A787320C289ED00B39E77 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		185A787420C289ED00B39E77 /* libLibSimpleConfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLibSimpleConfig.a; sourceTree = "<group>"; };
+		185A787520C289ED00B39E77 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		185A787620C289ED00B39E77 /* LibSimpleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibSimpleConfig.h; sourceTree = "<group>"; };
+		185A787820C289ED00B39E77 /* BLEasyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEasyConfig.h; sourceTree = "<group>"; };
+		185A787920C289EE00B39E77 /* WifiLinkGuBei.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiLinkGuBei.m; sourceTree = "<group>"; };
+		185A787A20C289EE00B39E77 /* WifiLinkGuBei.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiLinkGuBei.h; sourceTree = "<group>"; };
+		185A787B20C289EE00B39E77 /* libBLEasyConfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBLEasyConfig.a; sourceTree = "<group>"; };
+		185A787D20C289EE00B39E77 /* libXlwDevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXlwDevice.a; sourceTree = "<group>"; };
+		185A787E20C289EE00B39E77 /* WifiLinkXlw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiLinkXlw.h; sourceTree = "<group>"; };
+		185A787F20C289EE00B39E77 /* XlwDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XlwDevice.h; sourceTree = "<group>"; };
+		185A788020C289EE00B39E77 /* WifiLinkXlw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiLinkXlw.m; sourceTree = "<group>"; };
+		185A788220C289EE00B39E77 /* WifiLinkLTLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiLinkLTLink.h; sourceTree = "<group>"; };
+		185A788320C289EE00B39E77 /* LTLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLink.h; sourceTree = "<group>"; };
+		185A788420C289EE00B39E77 /* LTLinklib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = LTLinklib.a; sourceTree = "<group>"; };
+		185A788520C289EE00B39E77 /* WifiLinkLTLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiLinkLTLink.m; sourceTree = "<group>"; };
+		185A788720C289EE00B39E77 /* WifiLinkCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiLinkCustom.m; sourceTree = "<group>"; };
+		185A788820C289EE00B39E77 /* WifiLinkCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiLinkCustom.h; sourceTree = "<group>"; };
+		185A788A20C289EE00B39E77 /* WifiLinkEspTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiLinkEspTouch.h; sourceTree = "<group>"; };
+		185A788C20C289EE00B39E77 /* ESP_NetUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_NetUtil.m; sourceTree = "<group>"; };
+		185A788D20C289EE00B39E77 /* ESP_ByteUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_ByteUtil.m; sourceTree = "<group>"; };
+		185A788E20C289EE00B39E77 /* ESP_WifiUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_WifiUtil.m; sourceTree = "<group>"; };
+		185A788F20C289EE00B39E77 /* ESP_CRC8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_CRC8.m; sourceTree = "<group>"; };
+		185A789020C289EE00B39E77 /* ESPVersionMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPVersionMacro.h; sourceTree = "<group>"; };
+		185A789120C289EE00B39E77 /* ESP_NetUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_NetUtil.h; sourceTree = "<group>"; };
+		185A789220C289EE00B39E77 /* ESP_ByteUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_ByteUtil.h; sourceTree = "<group>"; };
+		185A789320C289EE00B39E77 /* ESP_CRC8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_CRC8.h; sourceTree = "<group>"; };
+		185A789420C289EE00B39E77 /* ESP_WifiUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_WifiUtil.h; sourceTree = "<group>"; };
+		185A789620C289EE00B39E77 /* ESPUDPSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPUDPSocketClient.h; sourceTree = "<group>"; };
+		185A789720C289EE00B39E77 /* ESPUDPSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPUDPSocketServer.m; sourceTree = "<group>"; };
+		185A789820C289EE00B39E77 /* ESPUDPSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPUDPSocketClient.m; sourceTree = "<group>"; };
+		185A789920C289EE00B39E77 /* ESPUDPSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPUDPSocketServer.h; sourceTree = "<group>"; };
+		185A789B20C289EE00B39E77 /* ESPGuideCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPGuideCode.m; sourceTree = "<group>"; };
+		185A789C20C289EE00B39E77 /* ESPTouchGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchGenerator.m; sourceTree = "<group>"; };
+		185A789D20C289EE00B39E77 /* ESPDataCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPDataCode.h; sourceTree = "<group>"; };
+		185A789E20C289EE00B39E77 /* ESPDatumCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPDatumCode.h; sourceTree = "<group>"; };
+		185A789F20C289EE00B39E77 /* ESPGuideCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPGuideCode.h; sourceTree = "<group>"; };
+		185A78A020C289EE00B39E77 /* ESPDataCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPDataCode.m; sourceTree = "<group>"; };
+		185A78A120C289EE00B39E77 /* ESPTouchGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchGenerator.h; sourceTree = "<group>"; };
+		185A78A220C289EE00B39E77 /* ESPDatumCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPDatumCode.m; sourceTree = "<group>"; };
+		185A78A320C289EE00B39E77 /* WifiLinkEspTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiLinkEspTouch.m; sourceTree = "<group>"; };
+		185A78A520C289EE00B39E77 /* ESPTouchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchResult.m; sourceTree = "<group>"; };
+		185A78A620C289EE00B39E77 /* ESPTouchTaskParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchTaskParameter.h; sourceTree = "<group>"; };
+		185A78A720C289EE00B39E77 /* ESPTouchTaskParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchTaskParameter.m; sourceTree = "<group>"; };
+		185A78A820C289EE00B39E77 /* ESPTouchTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchTask.m; sourceTree = "<group>"; };
+		185A78AA20C289EE00B39E77 /* ESPTouchTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchTask.h; sourceTree = "<group>"; };
+		185A78AB20C289EE00B39E77 /* ESPTouchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchResult.h; sourceTree = "<group>"; };
+		185A78AC20C289EE00B39E77 /* ESPTouchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchDelegate.h; sourceTree = "<group>"; };
+		185A78AE20C289EE00B39E77 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		185A78AF20C289EE00B39E77 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		185A78B020C289EE00B39E77 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		185A78B120C289EE00B39E77 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		185A78B320C289EE00B39E77 /* aes_cbc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes_cbc.c; sourceTree = "<group>"; };
+		185A78B420C289EE00B39E77 /* aes_ac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_ac.h; sourceTree = "<group>"; };
+		185A78B520C289EE00B39E77 /* aes_core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes_core.c; sourceTree = "<group>"; };
+		185A78B620C289EE00B39E77 /* aes_cbc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_cbc.h; sourceTree = "<group>"; };
+		185A78B720C289EE00B39E77 /* aes_locl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_locl.h; sourceTree = "<group>"; };
+		185A78B820C289EE00B39E77 /* libAbleCloudLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAbleCloudLib.a; sourceTree = "<group>"; };
+		185A78BB20C289EE00B39E77 /* ACRankingValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACRankingValue.h; sourceTree = "<group>"; };
+		185A78BC20C289EE00B39E77 /* ACRankingCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACRankingCount.h; sourceTree = "<group>"; };
+		185A78BE20C289EE00B39E77 /* ACDeviceActive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceActive.h; sourceTree = "<group>"; };
+		185A78C020C289EE00B39E77 /* ACContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACContext.h; sourceTree = "<group>"; };
+		185A78C220C289EE00B39E77 /* ACMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMsg.h; sourceTree = "<group>"; };
+		185A78C420C289EE00B39E77 /* ACClassTopicMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACClassTopicMessage.h; sourceTree = "<group>"; };
+		185A78C520C289EE00B39E77 /* ACDeviceTopicMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceTopicMessage.h; sourceTree = "<group>"; };
+		185A78C620C289EE00B39E77 /* ACPushReceive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPushReceive.h; sourceTree = "<group>"; };
+		185A78C720C289EE00B39E77 /* ACTopicMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTopicMessage.h; sourceTree = "<group>"; };
+		185A78C820C289EE00B39E77 /* ACCustomTopicMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCustomTopicMessage.h; sourceTree = "<group>"; };
+		185A78CA20C289EE00B39E77 /* ACLocalDeviceDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACLocalDeviceDetail.h; sourceTree = "<group>"; };
+		185A78CB20C289EE00B39E77 /* ACLocalDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACLocalDevice.h; sourceTree = "<group>"; };
+		185A78CD20C289EE00B39E77 /* ACProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACProduct.h; sourceTree = "<group>"; };
+		185A78CF20C289EE00B39E77 /* ACFeedBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFeedBack.h; sourceTree = "<group>"; };
+		185A78D120C289EE00B39E77 /* ACFileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFileInfo.h; sourceTree = "<group>"; };
+		185A78D320C289EE00B39E77 /* ACDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDevice.h; sourceTree = "<group>"; };
+		185A78D420C289EE00B39E77 /* ACDevicePropertySearchOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDevicePropertySearchOption.h; sourceTree = "<group>"; };
+		185A78D620C289EE00B39E77 /* ACWifiInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACWifiInfo.h; sourceTree = "<group>"; };
+		185A78D820C289EE00B39E77 /* ACUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACUserInfo.h; sourceTree = "<group>"; };
+		185A78DA20C289EE00B39E77 /* ACOTAUpgradeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACOTAUpgradeInfo.h; sourceTree = "<group>"; };
+		185A78DB20C289EE00B39E77 /* ACOTAFileMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACOTAFileMeta.h; sourceTree = "<group>"; };
+		185A78DC20C289EE00B39E77 /* ACOTACheckInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACOTACheckInfo.h; sourceTree = "<group>"; };
+		185A78DF20C289EE00B39E77 /* ACUserTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACUserTask.h; sourceTree = "<group>"; };
+		185A78E020C289EE00B39E77 /* ACUserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACUserCommand.h; sourceTree = "<group>"; };
+		185A78E120C289EE00B39E77 /* ACUserTaskGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACUserTaskGroup.h; sourceTree = "<group>"; };
+		185A78E220C289EE00B39E77 /* ACTimerTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTimerTask.h; sourceTree = "<group>"; };
+		185A78E320C289EE00B39E77 /* ACTimeRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTimeRule.h; sourceTree = "<group>"; };
+		185A78E520C289EE00B39E77 /* ACDeviceTaskGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceTaskGroup.h; sourceTree = "<group>"; };
+		185A78E620C289EE00B39E77 /* ACDeviceTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceTask.h; sourceTree = "<group>"; };
+		185A78E720C289EE00B39E77 /* ACDeviceCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceCommand.h; sourceTree = "<group>"; };
+		185A78E920C289EE00B39E77 /* ACDeviceMsgOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceMsgOption.h; sourceTree = "<group>"; };
+		185A78EA20C289EE00B39E77 /* ACDeviceMsgHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceMsgHead.h; sourceTree = "<group>"; };
+		185A78EB20C289EE00B39E77 /* ACDeviceMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceMsg.h; sourceTree = "<group>"; };
+		185A78EC20C289EE00B39E77 /* ACDeviceMsgSecHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceMsgSecHead.h; sourceTree = "<group>"; };
+		185A78ED20C289EE00B39E77 /* ACDeviceMsgPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceMsgPayload.h; sourceTree = "<group>"; };
+		185A78EF20C289EE00B39E77 /* ACClassTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACClassTopic.h; sourceTree = "<group>"; };
+		185A78F020C289EE00B39E77 /* ACDeviceTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceTopic.h; sourceTree = "<group>"; };
+		185A78F120C289EE00B39E77 /* ACPushTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPushTable.h; sourceTree = "<group>"; };
+		185A78F220C289EE00B39E77 /* ACCustomTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCustomTopic.h; sourceTree = "<group>"; };
+		185A78F320C289EE00B39E77 /* ACTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTopic.h; sourceTree = "<group>"; };
+		185A78F520C289EE00B39E77 /* ACWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACWeather.h; sourceTree = "<group>"; };
+		185A78F620C289EE00B39E77 /* ACAQI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACAQI.h; sourceTree = "<group>"; };
+		185A78F720C289EE00B39E77 /* ACPM25.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPM25.h; sourceTree = "<group>"; };
+		185A78F920C289EE00B39E77 /* ACBindUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACBindUser.h; sourceTree = "<group>"; };
+		185A78FB20C289EE00B39E77 /* ACMemoryCacheLocalDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMemoryCacheLocalDevice.h; sourceTree = "<group>"; };
+		185A78FC20C289EE00B39E77 /* ACUserDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACUserDevice.h; sourceTree = "<group>"; };
+		185A78FE20C289EE00B39E77 /* ACObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACObject.h; sourceTree = "<group>"; };
+		185A78FF20C289EE00B39E77 /* ACloudLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACloudLib.h; sourceTree = "<group>"; };
+		185A790220C289EE00B39E77 /* ACDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceManager.h; sourceTree = "<group>"; };
+		185A790420C289EE00B39E77 /* ACNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACNotificationManager.h; sourceTree = "<group>"; };
+		185A790620C289EE00B39E77 /* ACCustomDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCustomDataManager.h; sourceTree = "<group>"; };
+		185A790820C289EE00B39E77 /* ACDeviceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceClient.h; sourceTree = "<group>"; };
+		185A790A20C289EE00B39E77 /* ACWifiLinkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACWifiLinkManager.h; sourceTree = "<group>"; };
+		185A790B20C289EE00B39E77 /* ACWifiLinkProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACWifiLinkProtocol.h; sourceTree = "<group>"; };
+		185A790D20C289EE00B39E77 /* ACPushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPushManager.h; sourceTree = "<group>"; };
+		185A790F20C289EE00B39E77 /* ACWeatherManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACWeatherManager.h; sourceTree = "<group>"; };
+		185A791120C289EE00B39E77 /* ACFindDevicesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFindDevicesManager.h; sourceTree = "<group>"; };
+		185A791220C289EE00B39E77 /* ACQueryDeviceStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACQueryDeviceStateManager.h; sourceTree = "<group>"; };
+		185A791420C289EE00B39E77 /* ACDeviceTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceTimerManager.h; sourceTree = "<group>"; };
+		185A791520C289EE00B39E77 /* ACTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTimerManager.h; sourceTree = "<group>"; };
+		185A791620C289EE00B39E77 /* ACUserTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACUserTimerManager.h; sourceTree = "<group>"; };
+		185A791820C289EE00B39E77 /* ACAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACAccountManager.h; sourceTree = "<group>"; };
+		185A791A20C289EE00B39E77 /* ACHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACHelper.h; sourceTree = "<group>"; };
+		185A791B20C289EE00B39E77 /* ACloudLibConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACloudLibConst.h; sourceTree = "<group>"; };
+		185A791D20C289EE00B39E77 /* ACDeviceDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDeviceDataManager.h; sourceTree = "<group>"; };
+		185A791F20C289EE00B39E77 /* ACProductManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACProductManager.h; sourceTree = "<group>"; };
+		185A792120C289EE00B39E77 /* ACBindManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACBindManager.h; sourceTree = "<group>"; };
+		185A792320C289EE00B39E77 /* ACClassDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACClassDataManager.h; sourceTree = "<group>"; };
+		185A792520C289EE00B39E77 /* ACACL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACACL.h; sourceTree = "<group>"; };
+		185A792720C289EE00B39E77 /* ACCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCache.h; sourceTree = "<group>"; };
+		185A792920C289EE00B39E77 /* ACKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKeyChain.h; sourceTree = "<group>"; };
+		185A792B20C289EE00B39E77 /* ACFeedBackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFeedBackManager.h; sourceTree = "<group>"; };
+		185A792D20C289EE00B39E77 /* ACServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACServiceClient.h; sourceTree = "<group>"; };
+		185A792F20C289EE00B39E77 /* ACFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFileManager.h; sourceTree = "<group>"; };
+		185A793120C289EE00B39E77 /* ACOTAManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACOTAManager.h; sourceTree = "<group>"; };
+		185A793320C289EE00B39E77 /* ACRankingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACRankingManager.h; sourceTree = "<group>"; };
+		185A793420C289EE00B39E77 /* libAbleCloudLib_Simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAbleCloudLib_Simulator.a; sourceTree = "<group>"; };
+		185A79A120C28A0A00B39E77 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		185A79A320C28A1400B39E77 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		185A79A520C28A2100B39E77 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		185A79AF20C28B9200B39E77 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		185A79B020C28B9200B39E77 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		185A79B320C2939600B39E77 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		185A79B420C2939600B39E77 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		185A79B720C2A72B00B39E77 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		185A79B820C2A72B00B39E77 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		1862F5D320C2B2D900BD8CDA /* MBProgressHUDExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUDExtension.swift; sourceTree = "<group>"; };
+		1862F5D520C2B31A00BD8CDA /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		D596EC47030087A9DC54529B /* Pods-IntelSpeaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelSpeaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntelSpeaker/Pods-IntelSpeaker.debug.xcconfig"; sourceTree = "<group>"; };
+		FD697FA6D4C5BC33F6A1A95D /* Pods-IntelSpeaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelSpeaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntelSpeaker/Pods-IntelSpeaker.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		185A778920C288A600B39E77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185A79A620C28A2100B39E77 /* libz.tbd in Frameworks */,
+				185A79A420C28A1400B39E77 /* libresolv.tbd in Frameworks */,
+				185A79A220C28A0A00B39E77 /* libicucore.tbd in Frameworks */,
+				185A799F20C289EE00B39E77 /* libAbleCloudLib.a in Frameworks */,
+				185A797A20C289EE00B39E77 /* libsmartlinklib_7x.a in Frameworks */,
+				185A79A020C289EE00B39E77 /* libAbleCloudLib_Simulator.a in Frameworks */,
+				185A798120C289EE00B39E77 /* libcooee.a in Frameworks */,
+				185A798820C289EE00B39E77 /* libXlwDevice.a in Frameworks */,
+				185A797820C289EE00B39E77 /* libFTC_DEBUG_ARM_64.a in Frameworks */,
+				185A797420C289EE00B39E77 /* libConfiguration.a in Frameworks */,
+				185A797D20C289EE00B39E77 /* libEasyLink.a in Frameworks */,
+				185A795F20C289EE00B39E77 /* libUMessage_Sdk_1.4.0.a in Frameworks */,
+				185A798A20C289EE00B39E77 /* LTLinklib.a in Frameworks */,
+				6094070565CC38A9FA29CC3C /* Pods_IntelSpeaker.framework in Frameworks */,
+				185A798520C289EE00B39E77 /* libLibSimpleConfig.a in Frameworks */,
+				185A797120C289EE00B39E77 /* libiot.a in Frameworks */,
+				185A798720C289EE00B39E77 /* libBLEasyConfig.a in Frameworks */,
+				185A797020C289EE00B39E77 /* EasyConfig.a in Frameworks */,
+				185A797F20C289EE00B39E77 /* libcrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0615C1A491774A2105A7AD91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D596EC47030087A9DC54529B /* Pods-IntelSpeaker.debug.xcconfig */,
+				FD697FA6D4C5BC33F6A1A95D /* Pods-IntelSpeaker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1818066920C588B100D11EB2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1818066F20C5892400D11EB2 /* SetNetworkViewController.swift */,
+				1818067020C5892400D11EB2 /* SetNetworkViewController.xib */,
+				1818067320C58A8100D11EB2 /* SpeakerViewController.swift */,
+				1818067420C58A8100D11EB2 /* SpeakerViewController.xib */,
+				1818067720C58A9600D11EB2 /* MyViewController.swift */,
+				1818067820C58A9600D11EB2 /* MyViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185A778320C288A600B39E77 = {
+			isa = PBXGroup;
+			children = (
+				185A778E20C288A600B39E77 /* IntelSpeaker */,
+				185A778D20C288A600B39E77 /* Products */,
+				0615C1A491774A2105A7AD91 /* Pods */,
+				BE3F432499EBE1881986C72E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		185A778D20C288A600B39E77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				185A778C20C288A600B39E77 /* IntelSpeaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		185A778E20C288A600B39E77 /* IntelSpeaker */ = {
+			isa = PBXGroup;
+			children = (
+				185A79A920C28B3D00B39E77 /* Application */,
+				185A79A820C28ADC00B39E77 /* Resource */,
+				185A79A720C28AD200B39E77 /* Main */,
+				185A77A520C289D700B39E77 /* Login */,
+				185A77A620C289E000B39E77 /* Third */,
+				1862F5D220C2B16F00BD8CDA /* Extension */,
+			);
+			path = IntelSpeaker;
+			sourceTree = "<group>";
+		};
+		185A77A520C289D700B39E77 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				185A79AF20C28B9200B39E77 /* LoginViewController.swift */,
+				185A79B020C28B9200B39E77 /* LoginViewController.xib */,
+				185A79B720C2A72B00B39E77 /* RegisterViewController.swift */,
+				185A79B820C2A72B00B39E77 /* RegisterViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		185A77A620C289E000B39E77 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				185A77A720C289ED00B39E77 /* ACloudLib */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		185A77A720C289ED00B39E77 /* ACloudLib */ = {
+			isa = PBXGroup;
+			children = (
+				185A77A820C289ED00B39E77 /* Ablecloud_Sdk_Extra_Frameworks */,
+				185A78B820C289EE00B39E77 /* libAbleCloudLib.a */,
+				185A78B920C289EE00B39E77 /* Model */,
+				185A78FF20C289EE00B39E77 /* ACloudLib.h */,
+				185A790020C289EE00B39E77 /* Services */,
+				185A793420C289EE00B39E77 /* libAbleCloudLib_Simulator.a */,
+			);
+			path = ACloudLib;
+			sourceTree = "<group>";
+		};
+		185A77A820C289ED00B39E77 /* Ablecloud_Sdk_Extra_Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				185A77A920C289ED00B39E77 /* YYkit */,
+				185A77AE20C289ED00B39E77 /* SRWebSocket */,
+				185A77B220C289ED00B39E77 /* CacheKit */,
+				185A77BE20C289ED00B39E77 /* QiniuSDK */,
+				185A781420C289ED00B39E77 /* UMessage_Sdk_1.4.0 */,
+				185A781720C289ED00B39E77 /* AFNetworking */,
+				185A783B20C289ED00B39E77 /* SmartConfig */,
+				185A78AD20C289EE00B39E77 /* CocoaAsyncSocket */,
+				185A78B220C289EE00B39E77 /* AES */,
+			);
+			path = Ablecloud_Sdk_Extra_Frameworks;
+			sourceTree = "<group>";
+		};
+		185A77A920C289ED00B39E77 /* YYkit */ = {
+			isa = PBXGroup;
+			children = (
+				185A77AA20C289ED00B39E77 /* YYClassInfo.h */,
+				185A77AB20C289ED00B39E77 /* NSObject+YYModel.m */,
+				185A77AC20C289ED00B39E77 /* YYClassInfo.m */,
+				185A77AD20C289ED00B39E77 /* NSObject+YYModel.h */,
+			);
+			path = YYkit;
+			sourceTree = "<group>";
+		};
+		185A77AE20C289ED00B39E77 /* SRWebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				185A77AF20C289ED00B39E77 /* SRWebSocket.m */,
+				185A77B020C289ED00B39E77 /* SocketRocket-Prefix.pch */,
+				185A77B120C289ED00B39E77 /* SRWebSocket.h */,
+			);
+			path = SRWebSocket;
+			sourceTree = "<group>";
+		};
+		185A77B220C289ED00B39E77 /* CacheKit */ = {
+			isa = PBXGroup;
+			children = (
+				185A77B320C289ED00B39E77 /* CKMemoryCache.m */,
+				185A77B420C289ED00B39E77 /* CKCache.h */,
+				185A77B520C289ED00B39E77 /* CKFileCache.m */,
+				185A77B620C289ED00B39E77 /* CKCacheContent.h */,
+				185A77B720C289ED00B39E77 /* CKNullCache.h */,
+				185A77B820C289ED00B39E77 /* CKMemoryCache.h */,
+				185A77B920C289ED00B39E77 /* CKCache.m */,
+				185A77BA20C289ED00B39E77 /* CKNullCache.m */,
+				185A77BB20C289ED00B39E77 /* CacheKit.h */,
+				185A77BC20C289ED00B39E77 /* CKCacheContent.m */,
+				185A77BD20C289ED00B39E77 /* CKFileCache.h */,
+			);
+			path = CacheKit;
+			sourceTree = "<group>";
+		};
+		185A77BE20C289ED00B39E77 /* QiniuSDK */ = {
+			isa = PBXGroup;
+			children = (
+				185A77BF20C289ED00B39E77 /* Storage */,
+				185A77CD20C289ED00B39E77 /* Common */,
+				185A77E420C289ED00B39E77 /* Http */,
+				185A77EC20C289ED00B39E77 /* HappyDNS */,
+				185A780F20C289ED00B39E77 /* Recorder */,
+				185A781320C289ED00B39E77 /* QiniuSDK.h */,
+			);
+			path = QiniuSDK;
+			sourceTree = "<group>";
+		};
+		185A77BF20C289ED00B39E77 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				185A77C020C289ED00B39E77 /* QNResumeUpload.h */,
+				185A77C120C289ED00B39E77 /* QNUploadOption.h */,
+				185A77C220C289ED00B39E77 /* QNFormUpload.h */,
+				185A77C320C289ED00B39E77 /* QNUploadManager.m */,
+				185A77C420C289ED00B39E77 /* QNConfiguration.m */,
+				185A77C520C289ED00B39E77 /* QNUpToken.h */,
+				185A77C620C289ED00B39E77 /* QNResumeUpload.m */,
+				185A77C720C289ED00B39E77 /* QNUploadOption+Private.h */,
+				185A77C820C289ED00B39E77 /* QNUpToken.m */,
+				185A77C920C289ED00B39E77 /* QNConfiguration.h */,
+				185A77CA20C289ED00B39E77 /* QNUploadManager.h */,
+				185A77CB20C289ED00B39E77 /* QNFormUpload.m */,
+				185A77CC20C289ED00B39E77 /* QNUploadOption.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		185A77CD20C289ED00B39E77 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				185A77CE20C289ED00B39E77 /* QNPHAssetResource.m */,
+				185A77CF20C289ED00B39E77 /* QNCrc32.m */,
+				185A77D020C289ED00B39E77 /* QNFileDelegate.h */,
+				185A77D120C289ED00B39E77 /* QNALAssetFile.h */,
+				185A77D220C289ED00B39E77 /* QNUrlSafeBase64.m */,
+				185A77D320C289ED00B39E77 /* QNAsyncRun.h */,
+				185A77D420C289ED00B39E77 /* QN_GTM_Base64.h */,
+				185A77D520C289ED00B39E77 /* QNPHAssetFile.h */,
+				185A77D620C289ED00B39E77 /* QNFile.m */,
+				185A77D720C289ED00B39E77 /* QNEtag.m */,
+				185A77D820C289ED00B39E77 /* QNVersion.h */,
+				185A77D920C289ED00B39E77 /* QNSystem.m */,
+				185A77DA20C289ED00B39E77 /* QNCrc32.h */,
+				185A77DB20C289ED00B39E77 /* QNPHAssetResource.h */,
+				185A77DC20C289ED00B39E77 /* QNAsyncRun.m */,
+				185A77DD20C289ED00B39E77 /* QNUrlSafeBase64.h */,
+				185A77DE20C289ED00B39E77 /* QNALAssetFile.m */,
+				185A77DF20C289ED00B39E77 /* QNPHAssetFile.m */,
+				185A77E020C289ED00B39E77 /* QN_GTM_Base64.m */,
+				185A77E120C289ED00B39E77 /* QNSystem.h */,
+				185A77E220C289ED00B39E77 /* QNEtag.h */,
+				185A77E320C289ED00B39E77 /* QNFile.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		185A77E420C289ED00B39E77 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				185A77E520C289ED00B39E77 /* QNResponseInfo.h */,
+				185A77E620C289ED00B39E77 /* QNUserAgent.m */,
+				185A77E720C289ED00B39E77 /* QNSessionManager.h */,
+				185A77E820C289ED00B39E77 /* QNResponseInfo.m */,
+				185A77E920C289ED00B39E77 /* QNHttpDelegate.h */,
+				185A77EA20C289ED00B39E77 /* QNSessionManager.m */,
+				185A77EB20C289ED00B39E77 /* QNUserAgent.h */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		185A77EC20C289ED00B39E77 /* HappyDNS */ = {
+			isa = PBXGroup;
+			children = (
+				185A77ED20C289ED00B39E77 /* Util */,
+				185A77F420C289ED00B39E77 /* Local */,
+				185A77FF20C289ED00B39E77 /* Common */,
+				185A780920C289ED00B39E77 /* HappyDNS.h */,
+				185A780A20C289ED00B39E77 /* Http */,
+			);
+			path = HappyDNS;
+			sourceTree = "<group>";
+		};
+		185A77ED20C289ED00B39E77 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				185A77EE20C289ED00B39E77 /* QNDes.m */,
+				185A77EF20C289ED00B39E77 /* QNHex.m */,
+				185A77F020C289ED00B39E77 /* QNIP.m */,
+				185A77F120C289ED00B39E77 /* QNDes.h */,
+				185A77F220C289ED00B39E77 /* QNHex.h */,
+				185A77F320C289ED00B39E77 /* QNIP.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		185A77F420C289ED00B39E77 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				185A77F520C289ED00B39E77 /* QNHijackingDetectWrapper.h */,
+				185A77F620C289ED00B39E77 /* QNTxtResolver.m */,
+				185A77F720C289ED00B39E77 /* QNResolvUtil.h */,
+				185A77F820C289ED00B39E77 /* QNResolver.h */,
+				185A77F920C289ED00B39E77 /* QNHosts.h */,
+				185A77FA20C289ED00B39E77 /* QNHijackingDetectWrapper.m */,
+				185A77FB20C289ED00B39E77 /* QNTxtResolver.h */,
+				185A77FC20C289ED00B39E77 /* QNResolver.m */,
+				185A77FD20C289ED00B39E77 /* QNResolvUtil.m */,
+				185A77FE20C289ED00B39E77 /* QNHosts.m */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		185A77FF20C289ED00B39E77 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				185A780020C289ED00B39E77 /* QNNetworkInfo.h */,
+				185A780120C289ED00B39E77 /* QNDnsManager.m */,
+				185A780220C289ED00B39E77 /* QNDomain.h */,
+				185A780320C289ED00B39E77 /* QNRecord.h */,
+				185A780420C289ED00B39E77 /* QNResolverDelegate.h */,
+				185A780520C289ED00B39E77 /* QNNetworkInfo.m */,
+				185A780620C289ED00B39E77 /* QNDomain.m */,
+				185A780720C289ED00B39E77 /* QNDnsManager.h */,
+				185A780820C289ED00B39E77 /* QNRecord.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		185A780A20C289ED00B39E77 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				185A780B20C289ED00B39E77 /* QNDnspodFree.m */,
+				185A780C20C289ED00B39E77 /* QNDnspodEnterprise.h */,
+				185A780D20C289ED00B39E77 /* QNDnspodFree.h */,
+				185A780E20C289ED00B39E77 /* QNDnspodEnterprise.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		185A780F20C289ED00B39E77 /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				185A781020C289ED00B39E77 /* QNFileRecorder.m */,
+				185A781120C289ED00B39E77 /* QNFileRecorder.h */,
+				185A781220C289ED00B39E77 /* QNRecorderDelegate.h */,
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		185A781420C289ED00B39E77 /* UMessage_Sdk_1.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				185A781520C289ED00B39E77 /* libUMessage_Sdk_1.4.0.a */,
+				185A781620C289ED00B39E77 /* UMessage.h */,
+			);
+			path = UMessage_Sdk_1.4.0;
+			sourceTree = "<group>";
+		};
+		185A781720C289ED00B39E77 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				185A781820C289ED00B39E77 /* UIKit+AFNetworking */,
+				185A782D20C289ED00B39E77 /* AFNetworking */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		185A781820C289ED00B39E77 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				185A781920C289ED00B39E77 /* UIProgressView+AFNetworking.m */,
+				185A781A20C289ED00B39E77 /* UIButton+AFNetworking.h */,
+				185A781B20C289ED00B39E77 /* UIRefreshControl+AFNetworking.m */,
+				185A781C20C289ED00B39E77 /* UIImageView+AFNetworking.h */,
+				185A781D20C289ED00B39E77 /* AFImageDownloader.h */,
+				185A781E20C289ED00B39E77 /* AFNetworkActivityIndicatorManager.m */,
+				185A781F20C289ED00B39E77 /* AFAutoPurgingImageCache.h */,
+				185A782020C289ED00B39E77 /* UIWebView+AFNetworking.h */,
+				185A782120C289ED00B39E77 /* UIActivityIndicatorView+AFNetworking.h */,
+				185A782220C289ED00B39E77 /* UIImage+AFNetworking.h */,
+				185A782320C289ED00B39E77 /* UIProgressView+AFNetworking.h */,
+				185A782420C289ED00B39E77 /* UIImageView+AFNetworking.m */,
+				185A782520C289ED00B39E77 /* UIKit+AFNetworking.h */,
+				185A782620C289ED00B39E77 /* UIRefreshControl+AFNetworking.h */,
+				185A782720C289ED00B39E77 /* UIButton+AFNetworking.m */,
+				185A782820C289ED00B39E77 /* UIActivityIndicatorView+AFNetworking.m */,
+				185A782920C289ED00B39E77 /* UIWebView+AFNetworking.m */,
+				185A782A20C289ED00B39E77 /* AFAutoPurgingImageCache.m */,
+				185A782B20C289ED00B39E77 /* AFNetworkActivityIndicatorManager.h */,
+				185A782C20C289ED00B39E77 /* AFImageDownloader.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		185A782D20C289ED00B39E77 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				185A782E20C289ED00B39E77 /* AFSecurityPolicy.h */,
+				185A782F20C289ED00B39E77 /* AFNetworkReachabilityManager.h */,
+				185A783020C289ED00B39E77 /* AFURLSessionManager.h */,
+				185A783120C289ED00B39E77 /* AFURLRequestSerialization.h */,
+				185A783220C289ED00B39E77 /* AFURLResponseSerialization.m */,
+				185A783320C289ED00B39E77 /* AFHTTPSessionManager.m */,
+				185A783420C289ED00B39E77 /* AFURLResponseSerialization.h */,
+				185A783520C289ED00B39E77 /* AFURLSessionManager.m */,
+				185A783620C289ED00B39E77 /* AFURLRequestSerialization.m */,
+				185A783720C289ED00B39E77 /* AFNetworking.h */,
+				185A783820C289ED00B39E77 /* AFNetworkReachabilityManager.m */,
+				185A783920C289ED00B39E77 /* AFSecurityPolicy.m */,
+				185A783A20C289ED00B39E77 /* AFHTTPSessionManager.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		185A783B20C289ED00B39E77 /* SmartConfig */ = {
+			isa = PBXGroup;
+			children = (
+				185A783C20C289ED00B39E77 /* EasyConfig3.0 */,
+				185A784120C289ED00B39E77 /* SmartConnection */,
+				185A784620C289ED00B39E77 /* OneShot */,
+				185A784C20C289ED00B39E77 /* Marvell */,
+				185A785120C289ED00B39E77 /* CC3x */,
+				185A785620C289ED00B39E77 /* os_SmartLink */,
+				185A785D20C289ED00B39E77 /* EasyLink */,
+				185A786720C289ED00B39E77 /* Cooee */,
+				185A786D20C289ED00B39E77 /* LibSimpleConfig */,
+				185A787720C289ED00B39E77 /* GuBei */,
+				185A787C20C289EE00B39E77 /* libXlwDevice */,
+				185A788120C289EE00B39E77 /* LTLink */,
+				185A788620C289EE00B39E77 /* Custom */,
+				185A788920C289EE00B39E77 /* EspTouch */,
+			);
+			path = SmartConfig;
+			sourceTree = "<group>";
+		};
+		185A783C20C289ED00B39E77 /* EasyConfig3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				185A783D20C289ED00B39E77 /* WifiLinkEasyConfig.m */,
+				185A783E20C289ED00B39E77 /* WifiLinkEasyConfig.h */,
+				185A783F20C289ED00B39E77 /* EasyConfig.h */,
+				185A784020C289ED00B39E77 /* EasyConfig.a */,
+			);
+			path = EasyConfig3.0;
+			sourceTree = "<group>";
+		};
+		185A784120C289ED00B39E77 /* SmartConnection */ = {
+			isa = PBXGroup;
+			children = (
+				185A784220C289ED00B39E77 /* libiot.a */,
+				185A784320C289ED00B39E77 /* WifiLinkSmartConnection.m */,
+				185A784420C289ED00B39E77 /* WifiLinkSmartConnection.h */,
+				185A784520C289ED00B39E77 /* SmartConnection.h */,
+			);
+			path = SmartConnection;
+			sourceTree = "<group>";
+		};
+		185A784620C289ED00B39E77 /* OneShot */ = {
+			isa = PBXGroup;
+			children = (
+				185A784720C289ED00B39E77 /* WifiLinkOneShot.m */,
+				185A784820C289ED00B39E77 /* libConfiguration.a */,
+				185A784920C289ED00B39E77 /* OneShotConfig.h */,
+				185A784A20C289ED00B39E77 /* WifiLinkOneShot.h */,
+				185A784B20C289ED00B39E77 /* ManualConfig.h */,
+			);
+			path = OneShot;
+			sourceTree = "<group>";
+		};
+		185A784C20C289ED00B39E77 /* Marvell */ = {
+			isa = PBXGroup;
+			children = (
+				185A784D20C289ED00B39E77 /* MarvellSmartConfig.m */,
+				185A784E20C289ED00B39E77 /* WifiLinkMarvell.h */,
+				185A784F20C289ED00B39E77 /* MarvellSmartConfig.h */,
+				185A785020C289ED00B39E77 /* WifiLinkMarvell.m */,
+			);
+			path = Marvell;
+			sourceTree = "<group>";
+		};
+		185A785120C289ED00B39E77 /* CC3x */ = {
+			isa = PBXGroup;
+			children = (
+				185A785220C289ED00B39E77 /* FirstTimeConfig.h */,
+				185A785320C289ED00B39E77 /* WifiLinkCC3x.m */,
+				185A785420C289ED00B39E77 /* libFTC_DEBUG_ARM_64.a */,
+				185A785520C289ED00B39E77 /* WifiLinkCC3x.h */,
+			);
+			path = CC3x;
+			sourceTree = "<group>";
+		};
+		185A785620C289ED00B39E77 /* os_SmartLink */ = {
+			isa = PBXGroup;
+			children = (
+				185A785720C289ED00B39E77 /* HFSmartLink.h */,
+				185A785820C289ED00B39E77 /* WifiLinkHF.m */,
+				185A785920C289ED00B39E77 /* libsmartlinklib_7x.a */,
+				185A785A20C289ED00B39E77 /* smartlinklib_7x.h */,
+				185A785B20C289ED00B39E77 /* WifiLinkHF.h */,
+				185A785C20C289ED00B39E77 /* HFSmartLinkDeviceInfo.h */,
+			);
+			path = os_SmartLink;
+			sourceTree = "<group>";
+		};
+		185A785D20C289ED00B39E77 /* EasyLink */ = {
+			isa = PBXGroup;
+			children = (
+				185A785E20C289ED00B39E77 /* EASYLINK.h */,
+				185A785F20C289ED00B39E77 /* AXZWifiLinkProtocol.h */,
+				185A786020C289ED00B39E77 /* EasyLinkForAXZWifiLink.m */,
+				185A786120C289ED00B39E77 /* MXCHIPAirlink.m */,
+				185A786220C289ED00B39E77 /* WifiLinkEasyLink.h */,
+				185A786320C289ED00B39E77 /* EasyLinkForAXZWifiLink.h */,
+				185A786420C289ED00B39E77 /* libEasyLink.a */,
+				185A786520C289ED00B39E77 /* WifiLinkEasyLink.m */,
+				185A786620C289ED00B39E77 /* MXCHIPAirlink.h */,
+			);
+			path = EasyLink;
+			sourceTree = "<group>";
+		};
+		185A786720C289ED00B39E77 /* Cooee */ = {
+			isa = PBXGroup;
+			children = (
+				185A786820C289ED00B39E77 /* libcrypto.a */,
+				185A786920C289ED00B39E77 /* WifiLinkCooee.h */,
+				185A786A20C289ED00B39E77 /* WifiLinkCooee.m */,
+				185A786B20C289ED00B39E77 /* libcooee.a */,
+				185A786C20C289ED00B39E77 /* Cooee.h */,
+			);
+			path = Cooee;
+			sourceTree = "<group>";
+		};
+		185A786D20C289ED00B39E77 /* LibSimpleConfig */ = {
+			isa = PBXGroup;
+			children = (
+				185A786E20C289ED00B39E77 /* WifiLinkSimpleConfig.m */,
+				185A786F20C289ED00B39E77 /* SimpleConfig.h */,
+				185A787020C289ED00B39E77 /* AsyncUdpSocket.m */,
+				185A787120C289ED00B39E77 /* AsyncSocket.h */,
+				185A787220C289ED00B39E77 /* WifiLinkSimpleConfig.h */,
+				185A787320C289ED00B39E77 /* AsyncSocket.m */,
+				185A787420C289ED00B39E77 /* libLibSimpleConfig.a */,
+				185A787520C289ED00B39E77 /* AsyncUdpSocket.h */,
+				185A787620C289ED00B39E77 /* LibSimpleConfig.h */,
+			);
+			path = LibSimpleConfig;
+			sourceTree = "<group>";
+		};
+		185A787720C289ED00B39E77 /* GuBei */ = {
+			isa = PBXGroup;
+			children = (
+				185A787820C289ED00B39E77 /* BLEasyConfig.h */,
+				185A787920C289EE00B39E77 /* WifiLinkGuBei.m */,
+				185A787A20C289EE00B39E77 /* WifiLinkGuBei.h */,
+				185A787B20C289EE00B39E77 /* libBLEasyConfig.a */,
+			);
+			path = GuBei;
+			sourceTree = "<group>";
+		};
+		185A787C20C289EE00B39E77 /* libXlwDevice */ = {
+			isa = PBXGroup;
+			children = (
+				185A787D20C289EE00B39E77 /* libXlwDevice.a */,
+				185A787E20C289EE00B39E77 /* WifiLinkXlw.h */,
+				185A787F20C289EE00B39E77 /* XlwDevice.h */,
+				185A788020C289EE00B39E77 /* WifiLinkXlw.m */,
+			);
+			path = libXlwDevice;
+			sourceTree = "<group>";
+		};
+		185A788120C289EE00B39E77 /* LTLink */ = {
+			isa = PBXGroup;
+			children = (
+				185A788220C289EE00B39E77 /* WifiLinkLTLink.h */,
+				185A788320C289EE00B39E77 /* LTLink.h */,
+				185A788420C289EE00B39E77 /* LTLinklib.a */,
+				185A788520C289EE00B39E77 /* WifiLinkLTLink.m */,
+			);
+			path = LTLink;
+			sourceTree = "<group>";
+		};
+		185A788620C289EE00B39E77 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				185A788720C289EE00B39E77 /* WifiLinkCustom.m */,
+				185A788820C289EE00B39E77 /* WifiLinkCustom.h */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		185A788920C289EE00B39E77 /* EspTouch */ = {
+			isa = PBXGroup;
+			children = (
+				185A788A20C289EE00B39E77 /* WifiLinkEspTouch.h */,
+				185A788B20C289EE00B39E77 /* util */,
+				185A789520C289EE00B39E77 /* udp */,
+				185A789A20C289EE00B39E77 /* protocol */,
+				185A78A320C289EE00B39E77 /* WifiLinkEspTouch.m */,
+				185A78A420C289EE00B39E77 /* task */,
+				185A78A920C289EE00B39E77 /* esptouch */,
+			);
+			path = EspTouch;
+			sourceTree = "<group>";
+		};
+		185A788B20C289EE00B39E77 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				185A788C20C289EE00B39E77 /* ESP_NetUtil.m */,
+				185A788D20C289EE00B39E77 /* ESP_ByteUtil.m */,
+				185A788E20C289EE00B39E77 /* ESP_WifiUtil.m */,
+				185A788F20C289EE00B39E77 /* ESP_CRC8.m */,
+				185A789020C289EE00B39E77 /* ESPVersionMacro.h */,
+				185A789120C289EE00B39E77 /* ESP_NetUtil.h */,
+				185A789220C289EE00B39E77 /* ESP_ByteUtil.h */,
+				185A789320C289EE00B39E77 /* ESP_CRC8.h */,
+				185A789420C289EE00B39E77 /* ESP_WifiUtil.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		185A789520C289EE00B39E77 /* udp */ = {
+			isa = PBXGroup;
+			children = (
+				185A789620C289EE00B39E77 /* ESPUDPSocketClient.h */,
+				185A789720C289EE00B39E77 /* ESPUDPSocketServer.m */,
+				185A789820C289EE00B39E77 /* ESPUDPSocketClient.m */,
+				185A789920C289EE00B39E77 /* ESPUDPSocketServer.h */,
+			);
+			path = udp;
+			sourceTree = "<group>";
+		};
+		185A789A20C289EE00B39E77 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				185A789B20C289EE00B39E77 /* ESPGuideCode.m */,
+				185A789C20C289EE00B39E77 /* ESPTouchGenerator.m */,
+				185A789D20C289EE00B39E77 /* ESPDataCode.h */,
+				185A789E20C289EE00B39E77 /* ESPDatumCode.h */,
+				185A789F20C289EE00B39E77 /* ESPGuideCode.h */,
+				185A78A020C289EE00B39E77 /* ESPDataCode.m */,
+				185A78A120C289EE00B39E77 /* ESPTouchGenerator.h */,
+				185A78A220C289EE00B39E77 /* ESPDatumCode.m */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		185A78A420C289EE00B39E77 /* task */ = {
+			isa = PBXGroup;
+			children = (
+				185A78A520C289EE00B39E77 /* ESPTouchResult.m */,
+				185A78A620C289EE00B39E77 /* ESPTouchTaskParameter.h */,
+				185A78A720C289EE00B39E77 /* ESPTouchTaskParameter.m */,
+				185A78A820C289EE00B39E77 /* ESPTouchTask.m */,
+			);
+			path = task;
+			sourceTree = "<group>";
+		};
+		185A78A920C289EE00B39E77 /* esptouch */ = {
+			isa = PBXGroup;
+			children = (
+				185A78AA20C289EE00B39E77 /* ESPTouchTask.h */,
+				185A78AB20C289EE00B39E77 /* ESPTouchResult.h */,
+				185A78AC20C289EE00B39E77 /* ESPTouchDelegate.h */,
+			);
+			path = esptouch;
+			sourceTree = "<group>";
+		};
+		185A78AD20C289EE00B39E77 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				185A78AE20C289EE00B39E77 /* GCDAsyncUdpSocket.m */,
+				185A78AF20C289EE00B39E77 /* GCDAsyncSocket.m */,
+				185A78B020C289EE00B39E77 /* GCDAsyncUdpSocket.h */,
+				185A78B120C289EE00B39E77 /* GCDAsyncSocket.h */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		185A78B220C289EE00B39E77 /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				185A78B320C289EE00B39E77 /* aes_cbc.c */,
+				185A78B420C289EE00B39E77 /* aes_ac.h */,
+				185A78B520C289EE00B39E77 /* aes_core.c */,
+				185A78B620C289EE00B39E77 /* aes_cbc.h */,
+				185A78B720C289EE00B39E77 /* aes_locl.h */,
+			);
+			path = AES;
+			sourceTree = "<group>";
+		};
+		185A78B920C289EE00B39E77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				185A78BA20C289EE00B39E77 /* ACRanking */,
+				185A78BD20C289EE00B39E77 /* ACDeviceActive */,
+				185A78BF20C289EE00B39E77 /* ACContext */,
+				185A78C120C289EE00B39E77 /* ACMsg */,
+				185A78C320C289EE00B39E77 /* ACPushReceive */,
+				185A78C920C289EE00B39E77 /* ACLocalDevice */,
+				185A78CC20C289EE00B39E77 /* ACProduct */,
+				185A78CE20C289EE00B39E77 /* ACFeedBack */,
+				185A78D020C289EE00B39E77 /* ACFileInfo */,
+				185A78D220C289EE00B39E77 /* ACDevice */,
+				185A78D520C289EE00B39E77 /* ACAPInfo */,
+				185A78D720C289EE00B39E77 /* ACUserInfo */,
+				185A78D920C289EE00B39E77 /* ACOTA */,
+				185A78DD20C289EE00B39E77 /* ACTimerTask */,
+				185A78E820C289EE00B39E77 /* ACDeviceMsg */,
+				185A78EE20C289EE00B39E77 /* ACPushTable */,
+				185A78F420C289EE00B39E77 /* ACWeather */,
+				185A78F820C289EE00B39E77 /* ACBindUser */,
+				185A78FA20C289EE00B39E77 /* ACUserDevice */,
+				185A78FD20C289EE00B39E77 /* ACObject */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185A78BA20C289EE00B39E77 /* ACRanking */ = {
+			isa = PBXGroup;
+			children = (
+				185A78BB20C289EE00B39E77 /* ACRankingValue.h */,
+				185A78BC20C289EE00B39E77 /* ACRankingCount.h */,
+			);
+			path = ACRanking;
+			sourceTree = "<group>";
+		};
+		185A78BD20C289EE00B39E77 /* ACDeviceActive */ = {
+			isa = PBXGroup;
+			children = (
+				185A78BE20C289EE00B39E77 /* ACDeviceActive.h */,
+			);
+			path = ACDeviceActive;
+			sourceTree = "<group>";
+		};
+		185A78BF20C289EE00B39E77 /* ACContext */ = {
+			isa = PBXGroup;
+			children = (
+				185A78C020C289EE00B39E77 /* ACContext.h */,
+			);
+			path = ACContext;
+			sourceTree = "<group>";
+		};
+		185A78C120C289EE00B39E77 /* ACMsg */ = {
+			isa = PBXGroup;
+			children = (
+				185A78C220C289EE00B39E77 /* ACMsg.h */,
+			);
+			path = ACMsg;
+			sourceTree = "<group>";
+		};
+		185A78C320C289EE00B39E77 /* ACPushReceive */ = {
+			isa = PBXGroup;
+			children = (
+				185A78C420C289EE00B39E77 /* ACClassTopicMessage.h */,
+				185A78C520C289EE00B39E77 /* ACDeviceTopicMessage.h */,
+				185A78C620C289EE00B39E77 /* ACPushReceive.h */,
+				185A78C720C289EE00B39E77 /* ACTopicMessage.h */,
+				185A78C820C289EE00B39E77 /* ACCustomTopicMessage.h */,
+			);
+			path = ACPushReceive;
+			sourceTree = "<group>";
+		};
+		185A78C920C289EE00B39E77 /* ACLocalDevice */ = {
+			isa = PBXGroup;
+			children = (
+				185A78CA20C289EE00B39E77 /* ACLocalDeviceDetail.h */,
+				185A78CB20C289EE00B39E77 /* ACLocalDevice.h */,
+			);
+			path = ACLocalDevice;
+			sourceTree = "<group>";
+		};
+		185A78CC20C289EE00B39E77 /* ACProduct */ = {
+			isa = PBXGroup;
+			children = (
+				185A78CD20C289EE00B39E77 /* ACProduct.h */,
+			);
+			path = ACProduct;
+			sourceTree = "<group>";
+		};
+		185A78CE20C289EE00B39E77 /* ACFeedBack */ = {
+			isa = PBXGroup;
+			children = (
+				185A78CF20C289EE00B39E77 /* ACFeedBack.h */,
+			);
+			path = ACFeedBack;
+			sourceTree = "<group>";
+		};
+		185A78D020C289EE00B39E77 /* ACFileInfo */ = {
+			isa = PBXGroup;
+			children = (
+				185A78D120C289EE00B39E77 /* ACFileInfo.h */,
+			);
+			path = ACFileInfo;
+			sourceTree = "<group>";
+		};
+		185A78D220C289EE00B39E77 /* ACDevice */ = {
+			isa = PBXGroup;
+			children = (
+				185A78D320C289EE00B39E77 /* ACDevice.h */,
+				185A78D420C289EE00B39E77 /* ACDevicePropertySearchOption.h */,
+			);
+			path = ACDevice;
+			sourceTree = "<group>";
+		};
+		185A78D520C289EE00B39E77 /* ACAPInfo */ = {
+			isa = PBXGroup;
+			children = (
+				185A78D620C289EE00B39E77 /* ACWifiInfo.h */,
+			);
+			path = ACAPInfo;
+			sourceTree = "<group>";
+		};
+		185A78D720C289EE00B39E77 /* ACUserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				185A78D820C289EE00B39E77 /* ACUserInfo.h */,
+			);
+			path = ACUserInfo;
+			sourceTree = "<group>";
+		};
+		185A78D920C289EE00B39E77 /* ACOTA */ = {
+			isa = PBXGroup;
+			children = (
+				185A78DA20C289EE00B39E77 /* ACOTAUpgradeInfo.h */,
+				185A78DB20C289EE00B39E77 /* ACOTAFileMeta.h */,
+				185A78DC20C289EE00B39E77 /* ACOTACheckInfo.h */,
+			);
+			path = ACOTA;
+			sourceTree = "<group>";
+		};
+		185A78DD20C289EE00B39E77 /* ACTimerTask */ = {
+			isa = PBXGroup;
+			children = (
+				185A78DE20C289EE00B39E77 /* user */,
+				185A78E220C289EE00B39E77 /* ACTimerTask.h */,
+				185A78E320C289EE00B39E77 /* ACTimeRule.h */,
+				185A78E420C289EE00B39E77 /* device */,
+			);
+			path = ACTimerTask;
+			sourceTree = "<group>";
+		};
+		185A78DE20C289EE00B39E77 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				185A78DF20C289EE00B39E77 /* ACUserTask.h */,
+				185A78E020C289EE00B39E77 /* ACUserCommand.h */,
+				185A78E120C289EE00B39E77 /* ACUserTaskGroup.h */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		185A78E420C289EE00B39E77 /* device */ = {
+			isa = PBXGroup;
+			children = (
+				185A78E520C289EE00B39E77 /* ACDeviceTaskGroup.h */,
+				185A78E620C289EE00B39E77 /* ACDeviceTask.h */,
+				185A78E720C289EE00B39E77 /* ACDeviceCommand.h */,
+			);
+			path = device;
+			sourceTree = "<group>";
+		};
+		185A78E820C289EE00B39E77 /* ACDeviceMsg */ = {
+			isa = PBXGroup;
+			children = (
+				185A78E920C289EE00B39E77 /* ACDeviceMsgOption.h */,
+				185A78EA20C289EE00B39E77 /* ACDeviceMsgHead.h */,
+				185A78EB20C289EE00B39E77 /* ACDeviceMsg.h */,
+				185A78EC20C289EE00B39E77 /* ACDeviceMsgSecHead.h */,
+				185A78ED20C289EE00B39E77 /* ACDeviceMsgPayload.h */,
+			);
+			path = ACDeviceMsg;
+			sourceTree = "<group>";
+		};
+		185A78EE20C289EE00B39E77 /* ACPushTable */ = {
+			isa = PBXGroup;
+			children = (
+				185A78EF20C289EE00B39E77 /* ACClassTopic.h */,
+				185A78F020C289EE00B39E77 /* ACDeviceTopic.h */,
+				185A78F120C289EE00B39E77 /* ACPushTable.h */,
+				185A78F220C289EE00B39E77 /* ACCustomTopic.h */,
+				185A78F320C289EE00B39E77 /* ACTopic.h */,
+			);
+			path = ACPushTable;
+			sourceTree = "<group>";
+		};
+		185A78F420C289EE00B39E77 /* ACWeather */ = {
+			isa = PBXGroup;
+			children = (
+				185A78F520C289EE00B39E77 /* ACWeather.h */,
+				185A78F620C289EE00B39E77 /* ACAQI.h */,
+				185A78F720C289EE00B39E77 /* ACPM25.h */,
+			);
+			path = ACWeather;
+			sourceTree = "<group>";
+		};
+		185A78F820C289EE00B39E77 /* ACBindUser */ = {
+			isa = PBXGroup;
+			children = (
+				185A78F920C289EE00B39E77 /* ACBindUser.h */,
+			);
+			path = ACBindUser;
+			sourceTree = "<group>";
+		};
+		185A78FA20C289EE00B39E77 /* ACUserDevice */ = {
+			isa = PBXGroup;
+			children = (
+				185A78FB20C289EE00B39E77 /* ACMemoryCacheLocalDevice.h */,
+				185A78FC20C289EE00B39E77 /* ACUserDevice.h */,
+			);
+			path = ACUserDevice;
+			sourceTree = "<group>";
+		};
+		185A78FD20C289EE00B39E77 /* ACObject */ = {
+			isa = PBXGroup;
+			children = (
+				185A78FE20C289EE00B39E77 /* ACObject.h */,
+			);
+			path = ACObject;
+			sourceTree = "<group>";
+		};
+		185A790020C289EE00B39E77 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				185A790120C289EE00B39E77 /* ACDeviceManager */,
+				185A790320C289EE00B39E77 /* ACNotificationManager */,
+				185A790520C289EE00B39E77 /* ACCustomDataManager */,
+				185A790720C289EE00B39E77 /* ACDeviceClient */,
+				185A790920C289EE00B39E77 /* ACWifiLinkManager */,
+				185A790C20C289EE00B39E77 /* ACPushManager */,
+				185A790E20C289EE00B39E77 /* ACWeatherManager */,
+				185A791020C289EE00B39E77 /* ACFindDevicesManager */,
+				185A791320C289EE00B39E77 /* ACTimerManager */,
+				185A791720C289EE00B39E77 /* ACAccountManager */,
+				185A791920C289EE00B39E77 /* ACHelper */,
+				185A791C20C289EE00B39E77 /* ACDeviceDataManager */,
+				185A791E20C289EE00B39E77 /* ACProductManager */,
+				185A792020C289EE00B39E77 /* ACBindManager */,
+				185A792220C289EE00B39E77 /* ACClassDataManager */,
+				185A792420C289EE00B39E77 /* ACACL */,
+				185A792620C289EE00B39E77 /* ACCache */,
+				185A792820C289EE00B39E77 /* ACKeyChain */,
+				185A792A20C289EE00B39E77 /* ACFeedBackManager */,
+				185A792C20C289EE00B39E77 /* ACServiceClient */,
+				185A792E20C289EE00B39E77 /* ACFileManager */,
+				185A793020C289EE00B39E77 /* ACOTAManager */,
+				185A793220C289EE00B39E77 /* ACRankingManager */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		185A790120C289EE00B39E77 /* ACDeviceManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A790220C289EE00B39E77 /* ACDeviceManager.h */,
+			);
+			path = ACDeviceManager;
+			sourceTree = "<group>";
+		};
+		185A790320C289EE00B39E77 /* ACNotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A790420C289EE00B39E77 /* ACNotificationManager.h */,
+			);
+			path = ACNotificationManager;
+			sourceTree = "<group>";
+		};
+		185A790520C289EE00B39E77 /* ACCustomDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A790620C289EE00B39E77 /* ACCustomDataManager.h */,
+			);
+			path = ACCustomDataManager;
+			sourceTree = "<group>";
+		};
+		185A790720C289EE00B39E77 /* ACDeviceClient */ = {
+			isa = PBXGroup;
+			children = (
+				185A790820C289EE00B39E77 /* ACDeviceClient.h */,
+			);
+			path = ACDeviceClient;
+			sourceTree = "<group>";
+		};
+		185A790920C289EE00B39E77 /* ACWifiLinkManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A790A20C289EE00B39E77 /* ACWifiLinkManager.h */,
+				185A790B20C289EE00B39E77 /* ACWifiLinkProtocol.h */,
+			);
+			path = ACWifiLinkManager;
+			sourceTree = "<group>";
+		};
+		185A790C20C289EE00B39E77 /* ACPushManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A790D20C289EE00B39E77 /* ACPushManager.h */,
+			);
+			path = ACPushManager;
+			sourceTree = "<group>";
+		};
+		185A790E20C289EE00B39E77 /* ACWeatherManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A790F20C289EE00B39E77 /* ACWeatherManager.h */,
+			);
+			path = ACWeatherManager;
+			sourceTree = "<group>";
+		};
+		185A791020C289EE00B39E77 /* ACFindDevicesManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A791120C289EE00B39E77 /* ACFindDevicesManager.h */,
+				185A791220C289EE00B39E77 /* ACQueryDeviceStateManager.h */,
+			);
+			path = ACFindDevicesManager;
+			sourceTree = "<group>";
+		};
+		185A791320C289EE00B39E77 /* ACTimerManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A791420C289EE00B39E77 /* ACDeviceTimerManager.h */,
+				185A791520C289EE00B39E77 /* ACTimerManager.h */,
+				185A791620C289EE00B39E77 /* ACUserTimerManager.h */,
+			);
+			path = ACTimerManager;
+			sourceTree = "<group>";
+		};
+		185A791720C289EE00B39E77 /* ACAccountManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A791820C289EE00B39E77 /* ACAccountManager.h */,
+			);
+			path = ACAccountManager;
+			sourceTree = "<group>";
+		};
+		185A791920C289EE00B39E77 /* ACHelper */ = {
+			isa = PBXGroup;
+			children = (
+				185A791A20C289EE00B39E77 /* ACHelper.h */,
+				185A791B20C289EE00B39E77 /* ACloudLibConst.h */,
+			);
+			path = ACHelper;
+			sourceTree = "<group>";
+		};
+		185A791C20C289EE00B39E77 /* ACDeviceDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A791D20C289EE00B39E77 /* ACDeviceDataManager.h */,
+			);
+			path = ACDeviceDataManager;
+			sourceTree = "<group>";
+		};
+		185A791E20C289EE00B39E77 /* ACProductManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A791F20C289EE00B39E77 /* ACProductManager.h */,
+			);
+			path = ACProductManager;
+			sourceTree = "<group>";
+		};
+		185A792020C289EE00B39E77 /* ACBindManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A792120C289EE00B39E77 /* ACBindManager.h */,
+			);
+			path = ACBindManager;
+			sourceTree = "<group>";
+		};
+		185A792220C289EE00B39E77 /* ACClassDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A792320C289EE00B39E77 /* ACClassDataManager.h */,
+			);
+			path = ACClassDataManager;
+			sourceTree = "<group>";
+		};
+		185A792420C289EE00B39E77 /* ACACL */ = {
+			isa = PBXGroup;
+			children = (
+				185A792520C289EE00B39E77 /* ACACL.h */,
+			);
+			path = ACACL;
+			sourceTree = "<group>";
+		};
+		185A792620C289EE00B39E77 /* ACCache */ = {
+			isa = PBXGroup;
+			children = (
+				185A792720C289EE00B39E77 /* ACCache.h */,
+			);
+			path = ACCache;
+			sourceTree = "<group>";
+		};
+		185A792820C289EE00B39E77 /* ACKeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				185A792920C289EE00B39E77 /* ACKeyChain.h */,
+			);
+			path = ACKeyChain;
+			sourceTree = "<group>";
+		};
+		185A792A20C289EE00B39E77 /* ACFeedBackManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A792B20C289EE00B39E77 /* ACFeedBackManager.h */,
+			);
+			path = ACFeedBackManager;
+			sourceTree = "<group>";
+		};
+		185A792C20C289EE00B39E77 /* ACServiceClient */ = {
+			isa = PBXGroup;
+			children = (
+				185A792D20C289EE00B39E77 /* ACServiceClient.h */,
+			);
+			path = ACServiceClient;
+			sourceTree = "<group>";
+		};
+		185A792E20C289EE00B39E77 /* ACFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A792F20C289EE00B39E77 /* ACFileManager.h */,
+			);
+			path = ACFileManager;
+			sourceTree = "<group>";
+		};
+		185A793020C289EE00B39E77 /* ACOTAManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A793120C289EE00B39E77 /* ACOTAManager.h */,
+			);
+			path = ACOTAManager;
+			sourceTree = "<group>";
+		};
+		185A793220C289EE00B39E77 /* ACRankingManager */ = {
+			isa = PBXGroup;
+			children = (
+				185A793320C289EE00B39E77 /* ACRankingManager.h */,
+			);
+			path = ACRankingManager;
+			sourceTree = "<group>";
+		};
+		185A79A720C28AD200B39E77 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1818066920C588B100D11EB2 /* Controller */,
+				185A779120C288A600B39E77 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		185A79A820C28ADC00B39E77 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				185A779320C288A600B39E77 /* Main.storyboard */,
+				185A779620C288A600B39E77 /* Assets.xcassets */,
+				185A779820C288A600B39E77 /* LaunchScreen.storyboard */,
+				185A779B20C288A600B39E77 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		185A79A920C28B3D00B39E77 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				185A778F20C288A600B39E77 /* AppDelegate.swift */,
+				185A77A120C288BD00B39E77 /* IntelSpeaker-Bridging-Header.h */,
+				185A79B320C2939600B39E77 /* RootViewController.swift */,
+				185A79B420C2939600B39E77 /* RootViewController.xib */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1862F5D220C2B16F00BD8CDA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1862F5D520C2B31A00BD8CDA /* StringExtension.swift */,
+				1862F5D320C2B2D900BD8CDA /* MBProgressHUDExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BE3F432499EBE1881986C72E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				185A79A520C28A2100B39E77 /* libz.tbd */,
+				185A79A320C28A1400B39E77 /* libresolv.tbd */,
+				185A79A120C28A0A00B39E77 /* libicucore.tbd */,
+				032535DFDF94729B7728AFDC /* Pods_IntelSpeaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		185A778B20C288A600B39E77 /* IntelSpeaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185A779E20C288A600B39E77 /* Build configuration list for PBXNativeTarget "IntelSpeaker" */;
+			buildPhases = (
+				94FDAF361F7A80F9A20FF1C1 /* [CP] Check Pods Manifest.lock */,
+				185A778820C288A600B39E77 /* Sources */,
+				185A778920C288A600B39E77 /* Frameworks */,
+				185A778A20C288A600B39E77 /* Resources */,
+				3405236DAC53F9C1DB16E025 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelSpeaker;
+			productName = IntelSpeaker;
+			productReference = 185A778C20C288A600B39E77 /* IntelSpeaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		185A778420C288A600B39E77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = xiongzhengrui;
+				TargetAttributes = {
+					185A778B20C288A600B39E77 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = 185A778720C288A600B39E77 /* Build configuration list for PBXProject "IntelSpeaker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 185A778320C288A600B39E77;
+			productRefGroup = 185A778D20C288A600B39E77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				185A778B20C288A600B39E77 /* IntelSpeaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		185A778A20C288A600B39E77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185A79B220C28B9200B39E77 /* LoginViewController.xib in Resources */,
+				185A779A20C288A600B39E77 /* LaunchScreen.storyboard in Resources */,
+				185A79B620C2939600B39E77 /* RootViewController.xib in Resources */,
+				1818067220C5892400D11EB2 /* SetNetworkViewController.xib in Resources */,
+				1818067620C58A8100D11EB2 /* SpeakerViewController.xib in Resources */,
+				185A779720C288A600B39E77 /* Assets.xcassets in Resources */,
+				185A779520C288A600B39E77 /* Main.storyboard in Resources */,
+				185A79BA20C2A72B00B39E77 /* RegisterViewController.xib in Resources */,
+				1818067A20C58A9700D11EB2 /* MyViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3405236DAC53F9C1DB16E025 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IntelSpeaker/Pods-IntelSpeaker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelSpeaker/Pods-IntelSpeaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94FDAF361F7A80F9A20FF1C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntelSpeaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		185A778820C288A600B39E77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185A796120C289EE00B39E77 /* UIRefreshControl+AFNetworking.m in Sources */,
+				185A793620C289EE00B39E77 /* YYClassInfo.m in Sources */,
+				185A795620C289EE00B39E77 /* QNResolvUtil.m in Sources */,
+				185A798320C289EE00B39E77 /* AsyncUdpSocket.m in Sources */,
+				185A799D20C289EE00B39E77 /* aes_cbc.c in Sources */,
+				185A795C20C289EE00B39E77 /* QNDnspodFree.m in Sources */,
+				185A795720C289EE00B39E77 /* QNHosts.m in Sources */,
+				185A796020C289EE00B39E77 /* UIProgressView+AFNetworking.m in Sources */,
+				185A794E20C289EE00B39E77 /* QNResponseInfo.m in Sources */,
+				185A798920C289EE00B39E77 /* WifiLinkXlw.m in Sources */,
+				185A795120C289EE00B39E77 /* QNHex.m in Sources */,
+				1818067920C58A9700D11EB2 /* MyViewController.swift in Sources */,
+				185A795920C289EE00B39E77 /* QNNetworkInfo.m in Sources */,
+				185A79B520C2939600B39E77 /* RootViewController.swift in Sources */,
+				185A79B120C28B9200B39E77 /* LoginViewController.swift in Sources */,
+				185A797B20C289EE00B39E77 /* EasyLinkForAXZWifiLink.m in Sources */,
+				185A793920C289EE00B39E77 /* CKFileCache.m in Sources */,
+				185A798F20C289EE00B39E77 /* ESP_WifiUtil.m in Sources */,
+				185A795020C289EE00B39E77 /* QNDes.m in Sources */,
+				185A799820C289EE00B39E77 /* ESPTouchResult.m in Sources */,
+				185A794D20C289EE00B39E77 /* QNUserAgent.m in Sources */,
+				185A796C20C289EE00B39E77 /* AFURLRequestSerialization.m in Sources */,
+				185A796E20C289EE00B39E77 /* AFSecurityPolicy.m in Sources */,
+				185A794620C289EE00B39E77 /* QNFile.m in Sources */,
+				185A798420C289EE00B39E77 /* AsyncSocket.m in Sources */,
+				185A793B20C289EE00B39E77 /* CKNullCache.m in Sources */,
+				185A797C20C289EE00B39E77 /* MXCHIPAirlink.m in Sources */,
+				185A799920C289EE00B39E77 /* ESPTouchTaskParameter.m in Sources */,
+				185A794F20C289EE00B39E77 /* QNSessionManager.m in Sources */,
+				185A795A20C289EE00B39E77 /* QNDomain.m in Sources */,
+				185A794020C289EE00B39E77 /* QNUpToken.m in Sources */,
+				185A796D20C289EE00B39E77 /* AFNetworkReachabilityManager.m in Sources */,
+				185A796B20C289EE00B39E77 /* AFURLSessionManager.m in Sources */,
+				1862F5D620C2B31A00BD8CDA /* StringExtension.swift in Sources */,
+				185A795420C289EE00B39E77 /* QNHijackingDetectWrapper.m in Sources */,
+				185A799120C289EE00B39E77 /* ESPUDPSocketServer.m in Sources */,
+				185A799420C289EE00B39E77 /* ESPTouchGenerator.m in Sources */,
+				185A796820C289EE00B39E77 /* AFImageDownloader.m in Sources */,
+				185A799520C289EE00B39E77 /* ESPDataCode.m in Sources */,
+				185A795E20C289EE00B39E77 /* QNFileRecorder.m in Sources */,
+				185A793820C289EE00B39E77 /* CKMemoryCache.m in Sources */,
+				185A797E20C289EE00B39E77 /* WifiLinkEasyLink.m in Sources */,
+				185A794320C289EE00B39E77 /* QNPHAssetResource.m in Sources */,
+				185A793F20C289EE00B39E77 /* QNResumeUpload.m in Sources */,
+				185A797320C289EE00B39E77 /* WifiLinkOneShot.m in Sources */,
+				185A798620C289EE00B39E77 /* WifiLinkGuBei.m in Sources */,
+				185A797620C289EE00B39E77 /* WifiLinkMarvell.m in Sources */,
+				185A799C20C289EE00B39E77 /* GCDAsyncSocket.m in Sources */,
+				185A799020C289EE00B39E77 /* ESP_CRC8.m in Sources */,
+				185A798E20C289EE00B39E77 /* ESP_ByteUtil.m in Sources */,
+				185A795820C289EE00B39E77 /* QNDnsManager.m in Sources */,
+				185A795520C289EE00B39E77 /* QNResolver.m in Sources */,
+				185A796220C289EE00B39E77 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				185A79B920C2A72B00B39E77 /* RegisterViewController.swift in Sources */,
+				185A799720C289EE00B39E77 /* WifiLinkEspTouch.m in Sources */,
+				185A799B20C289EE00B39E77 /* GCDAsyncUdpSocket.m in Sources */,
+				185A794720C289EE00B39E77 /* QNEtag.m in Sources */,
+				185A796A20C289EE00B39E77 /* AFHTTPSessionManager.m in Sources */,
+				185A796520C289EE00B39E77 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				185A793520C289EE00B39E77 /* NSObject+YYModel.m in Sources */,
+				185A794420C289EE00B39E77 /* QNCrc32.m in Sources */,
+				185A795D20C289EE00B39E77 /* QNDnspodEnterprise.m in Sources */,
+				185A794820C289EE00B39E77 /* QNSystem.m in Sources */,
+				185A793720C289EE00B39E77 /* SRWebSocket.m in Sources */,
+				185A795B20C289EE00B39E77 /* QNRecord.m in Sources */,
+				185A794220C289EE00B39E77 /* QNUploadOption.m in Sources */,
+				185A794C20C289EE00B39E77 /* QN_GTM_Base64.m in Sources */,
+				185A798020C289EE00B39E77 /* WifiLinkCooee.m in Sources */,
+				185A799E20C289EE00B39E77 /* aes_core.c in Sources */,
+				185A799620C289EE00B39E77 /* ESPDatumCode.m in Sources */,
+				185A797520C289EE00B39E77 /* MarvellSmartConfig.m in Sources */,
+				185A779220C288A600B39E77 /* ViewController.swift in Sources */,
+				185A794920C289EE00B39E77 /* QNAsyncRun.m in Sources */,
+				185A793A20C289EE00B39E77 /* CKCache.m in Sources */,
+				185A797720C289EE00B39E77 /* WifiLinkCC3x.m in Sources */,
+				185A798220C289EE00B39E77 /* WifiLinkSimpleConfig.m in Sources */,
+				1862F5D420C2B2D900BD8CDA /* MBProgressHUDExtension.swift in Sources */,
+				185A796F20C289EE00B39E77 /* WifiLinkEasyConfig.m in Sources */,
+				185A794120C289EE00B39E77 /* QNFormUpload.m in Sources */,
+				185A797220C289EE00B39E77 /* WifiLinkSmartConnection.m in Sources */,
+				185A798D20C289EE00B39E77 /* ESP_NetUtil.m in Sources */,
+				185A794B20C289EE00B39E77 /* QNPHAssetFile.m in Sources */,
+				185A795220C289EE00B39E77 /* QNIP.m in Sources */,
+				185A793D20C289EE00B39E77 /* QNUploadManager.m in Sources */,
+				185A794520C289EE00B39E77 /* QNUrlSafeBase64.m in Sources */,
+				185A793C20C289EE00B39E77 /* CKCacheContent.m in Sources */,
+				185A796620C289EE00B39E77 /* UIWebView+AFNetworking.m in Sources */,
+				185A796920C289EE00B39E77 /* AFURLResponseSerialization.m in Sources */,
+				185A796320C289EE00B39E77 /* UIImageView+AFNetworking.m in Sources */,
+				185A796420C289EE00B39E77 /* UIButton+AFNetworking.m in Sources */,
+				185A799320C289EE00B39E77 /* ESPGuideCode.m in Sources */,
+				185A796720C289EE00B39E77 /* AFAutoPurgingImageCache.m in Sources */,
+				1818067120C5892400D11EB2 /* SetNetworkViewController.swift in Sources */,
+				185A779020C288A600B39E77 /* AppDelegate.swift in Sources */,
+				185A795320C289EE00B39E77 /* QNTxtResolver.m in Sources */,
+				185A799A20C289EE00B39E77 /* ESPTouchTask.m in Sources */,
+				185A794A20C289EE00B39E77 /* QNALAssetFile.m in Sources */,
+				1818067520C58A8100D11EB2 /* SpeakerViewController.swift in Sources */,
+				185A797920C289EE00B39E77 /* WifiLinkHF.m in Sources */,
+				185A799220C289EE00B39E77 /* ESPUDPSocketClient.m in Sources */,
+				185A798B20C289EE00B39E77 /* WifiLinkLTLink.m in Sources */,
+				185A798C20C289EE00B39E77 /* WifiLinkCustom.m in Sources */,
+				185A793E20C289EE00B39E77 /* QNConfiguration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		185A779320C288A600B39E77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185A779420C288A600B39E77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		185A779820C288A600B39E77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185A779920C288A600B39E77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		185A779C20C288A600B39E77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		185A779D20C288A600B39E77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		185A779F20C288A600B39E77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D596EC47030087A9DC54529B /* Pods-IntelSpeaker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64QULGHA36;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/IntelSpeaker/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/UMessage_Sdk_1.4.0",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/EasyConfig3.0",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/SmartConnection",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/OneShot",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/CC3x",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/os_SmartLink",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/EasyLink",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/Cooee",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/LibSimpleConfig",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/GuBei",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/libXlwDevice",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/LTLink",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YXzr.IntelSpeaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/IntelSpeaker/Application/IntelSpeaker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		185A77A020C288A600B39E77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD697FA6D4C5BC33F6A1A95D /* Pods-IntelSpeaker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64QULGHA36;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/IntelSpeaker/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/UMessage_Sdk_1.4.0",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/EasyConfig3.0",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/SmartConnection",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/OneShot",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/CC3x",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/os_SmartLink",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/EasyLink",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/Cooee",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/LibSimpleConfig",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/GuBei",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/libXlwDevice",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib/Ablecloud_Sdk_Extra_Frameworks/SmartConfig/LTLink",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/ACloudLib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YXzr.IntelSpeaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/IntelSpeaker/Application/IntelSpeaker-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		185A778720C288A600B39E77 /* Build configuration list for PBXProject "IntelSpeaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185A779C20C288A600B39E77 /* Debug */,
+				185A779D20C288A600B39E77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185A779E20C288A600B39E77 /* Build configuration list for PBXNativeTarget "IntelSpeaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185A779F20C288A600B39E77 /* Debug */,
+				185A77A020C288A600B39E77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 185A778420C288A600B39E77 /* Project object */;
+}
