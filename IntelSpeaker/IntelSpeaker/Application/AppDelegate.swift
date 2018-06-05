@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.bounds = UIScreen.main.bounds
 //        if !ACAccountManager.isLogin() {
-            let vc = LoginViewController(nibName: "LoginViewController", bundle: nil)
+            let vc = SetNetworkViewController(nibName: "SetNetworkViewController", bundle: nil)
             window?.rootViewController = vc
 //        } else {
 //            let vc = RootViewController(nibName: "RootViewController", bundle: nil)

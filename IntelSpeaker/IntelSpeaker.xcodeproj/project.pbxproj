@@ -14,7 +14,6 @@
 		1818067920C58A9700D11EB2 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818067720C58A9600D11EB2 /* MyViewController.swift */; };
 		1818067A20C58A9700D11EB2 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1818067820C58A9600D11EB2 /* MyViewController.xib */; };
 		185A779020C288A600B39E77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A778F20C288A600B39E77 /* AppDelegate.swift */; };
-		185A779220C288A600B39E77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A779120C288A600B39E77 /* ViewController.swift */; };
 		185A779520C288A600B39E77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185A779320C288A600B39E77 /* Main.storyboard */; };
 		185A779720C288A600B39E77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185A779620C288A600B39E77 /* Assets.xcassets */; };
 		185A779A20C288A600B39E77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185A779820C288A600B39E77 /* LaunchScreen.storyboard */; };
@@ -137,6 +136,7 @@
 		185A79BA20C2A72B00B39E77 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185A79B820C2A72B00B39E77 /* RegisterViewController.xib */; };
 		1862F5D420C2B2D900BD8CDA /* MBProgressHUDExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862F5D320C2B2D900BD8CDA /* MBProgressHUDExtension.swift */; };
 		1862F5D620C2B31A00BD8CDA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862F5D520C2B31A00BD8CDA /* StringExtension.swift */; };
+		187E1E2720C593D1000B9ED7 /* GenieForTaobao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187E1E2620C593D1000B9ED7 /* GenieForTaobao.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6094070565CC38A9FA29CC3C /* Pods_IntelSpeaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032535DFDF94729B7728AFDC /* Pods_IntelSpeaker.framework */; };
 /* End PBXBuildFile section */
 
@@ -150,7 +150,6 @@
 		1818067820C58A9600D11EB2 /* MyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
 		185A778C20C288A600B39E77 /* IntelSpeaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelSpeaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185A778F20C288A600B39E77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		185A779120C288A600B39E77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		185A779420C288A600B39E77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		185A779620C288A600B39E77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185A779920C288A600B39E77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -477,6 +476,7 @@
 		185A79B820C2A72B00B39E77 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		1862F5D320C2B2D900BD8CDA /* MBProgressHUDExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUDExtension.swift; sourceTree = "<group>"; };
 		1862F5D520C2B31A00BD8CDA /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		187E1E2620C593D1000B9ED7 /* GenieForTaobao.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GenieForTaobao.framework; sourceTree = "<group>"; };
 		D596EC47030087A9DC54529B /* Pods-IntelSpeaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelSpeaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntelSpeaker/Pods-IntelSpeaker.debug.xcconfig"; sourceTree = "<group>"; };
 		FD697FA6D4C5BC33F6A1A95D /* Pods-IntelSpeaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelSpeaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntelSpeaker/Pods-IntelSpeaker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -491,6 +491,7 @@
 				185A79A220C28A0A00B39E77 /* libicucore.tbd in Frameworks */,
 				185A799F20C289EE00B39E77 /* libAbleCloudLib.a in Frameworks */,
 				185A797A20C289EE00B39E77 /* libsmartlinklib_7x.a in Frameworks */,
+				187E1E2720C593D1000B9ED7 /* GenieForTaobao.framework in Frameworks */,
 				185A79A020C289EE00B39E77 /* libAbleCloudLib_Simulator.a in Frameworks */,
 				185A798120C289EE00B39E77 /* libcooee.a in Frameworks */,
 				185A798820C289EE00B39E77 /* libXlwDevice.a in Frameworks */,
@@ -525,10 +526,6 @@
 			children = (
 				1818066F20C5892400D11EB2 /* SetNetworkViewController.swift */,
 				1818067020C5892400D11EB2 /* SetNetworkViewController.xib */,
-				1818067320C58A8100D11EB2 /* SpeakerViewController.swift */,
-				1818067420C58A8100D11EB2 /* SpeakerViewController.xib */,
-				1818067720C58A9600D11EB2 /* MyViewController.swift */,
-				1818067820C58A9600D11EB2 /* MyViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -578,6 +575,7 @@
 		185A77A620C289E000B39E77 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				187E1E2520C593BB000B9ED7 /* TaoBao */,
 				185A77A720C289ED00B39E77 /* ACloudLib */,
 			);
 			path = Third;
@@ -1599,8 +1597,9 @@
 		185A79A720C28AD200B39E77 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				1818066920C588B100D11EB2 /* Controller */,
-				185A779120C288A600B39E77 /* ViewController.swift */,
+				187E1E2A20C597BD000B9ED7 /* My */,
+				187E1E2920C597B4000B9ED7 /* Speaker */,
+				187E1E2820C5979C000B9ED7 /* Network */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1634,6 +1633,56 @@
 				1862F5D320C2B2D900BD8CDA /* MBProgressHUDExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		187E1E2520C593BB000B9ED7 /* TaoBao */ = {
+			isa = PBXGroup;
+			children = (
+				187E1E2620C593D1000B9ED7 /* GenieForTaobao.framework */,
+			);
+			path = TaoBao;
+			sourceTree = "<group>";
+		};
+		187E1E2820C5979C000B9ED7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1818066920C588B100D11EB2 /* Controller */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		187E1E2920C597B4000B9ED7 /* Speaker */ = {
+			isa = PBXGroup;
+			children = (
+				187E1E2C20C597CF000B9ED7 /* Controller */,
+			);
+			path = Speaker;
+			sourceTree = "<group>";
+		};
+		187E1E2A20C597BD000B9ED7 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				187E1E2B20C597C7000B9ED7 /* Controller */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		187E1E2B20C597C7000B9ED7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1818067720C58A9600D11EB2 /* MyViewController.swift */,
+				1818067820C58A9600D11EB2 /* MyViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		187E1E2C20C597CF000B9ED7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1818067320C58A8100D11EB2 /* SpeakerViewController.swift */,
+				1818067420C58A8100D11EB2 /* SpeakerViewController.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		BE3F432499EBE1881986C72E /* Frameworks */ = {
@@ -1849,7 +1898,6 @@
 				185A799E20C289EE00B39E77 /* aes_core.c in Sources */,
 				185A799620C289EE00B39E77 /* ESPDatumCode.m in Sources */,
 				185A797520C289EE00B39E77 /* MarvellSmartConfig.m in Sources */,
-				185A779220C288A600B39E77 /* ViewController.swift in Sources */,
 				185A794920C289EE00B39E77 /* QNAsyncRun.m in Sources */,
 				185A793A20C289EE00B39E77 /* CKCache.m in Sources */,
 				185A797720C289EE00B39E77 /* WifiLinkCC3x.m in Sources */,
@@ -2029,6 +2077,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64QULGHA36;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/TaoBao",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/IntelSpeaker/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2069,6 +2121,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64QULGHA36;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IntelSpeaker/Third/TaoBao",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/IntelSpeaker/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

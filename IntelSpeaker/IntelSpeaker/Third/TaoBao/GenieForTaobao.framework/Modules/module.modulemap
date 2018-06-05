@@ -1,0 +1,6 @@
+framework module GenieForTaobao {
+  umbrella header "GenieForTaobao.h"
+
+  export *
+  module * { export * }
+}
